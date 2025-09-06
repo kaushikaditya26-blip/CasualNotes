@@ -353,17 +353,17 @@ Examples:
             ctx.fillStyle = "#ffffff";
             ctx.fillRect(0, 0, canvas.width, canvas.height);
             
-            // Modern corporate color palette
+            // Light, eye-friendly color palette
             const colorMap = {
-                blue: "#1e3a8a",
-                green: "#065f46", 
-                orange: "#c2410c",
-                red: "#991b1b",
-                purple: "#581c87",
-                teal: "#134e4a"
+                blue: "#3b82f6",
+                green: "#10b981", 
+                orange: "#f59e0b",
+                red: "#ef4444",
+                purple: "#8b5cf6",
+                teal: "#14b8a6"
             };
             
-            // Text colors for optimal contrast
+            // Text colors optimized for lighter backgrounds
             const textColorMap = {
                 blue: "#ffffff",
                 green: "#ffffff", 
@@ -500,18 +500,18 @@ Examples:
                 // Corporate-style box with enhanced shadow and border
                 const radius = 8;
                 
-                // First draw shadow
-                ctx.fillStyle = "rgba(0, 0, 0, 0.15)";
+                // Soft shadow for light color scheme
+                ctx.fillStyle = "rgba(0, 0, 0, 0.1)";
                 ctx.beginPath();
-                ctx.moveTo(x + radius + 3, y + 3);
-                ctx.lineTo(x + boxWidth - radius + 3, y + 3);
-                ctx.quadraticCurveTo(x + boxWidth + 3, y + 3, x + boxWidth + 3, y + radius + 3);
-                ctx.lineTo(x + boxWidth + 3, y + boxHeight - radius + 3);
-                ctx.quadraticCurveTo(x + boxWidth + 3, y + boxHeight + 3, x + boxWidth - radius + 3, y + boxHeight + 3);
-                ctx.lineTo(x + radius + 3, y + boxHeight + 3);
-                ctx.quadraticCurveTo(x + 3, y + boxHeight + 3, x + 3, y + boxHeight - radius + 3);
-                ctx.lineTo(x + 3, y + radius + 3);
-                ctx.quadraticCurveTo(x + 3, y + 3, x + radius + 3, y + 3);
+                ctx.moveTo(x + radius + 2, y + 2);
+                ctx.lineTo(x + boxWidth - radius + 2, y + 2);
+                ctx.quadraticCurveTo(x + boxWidth + 2, y + 2, x + boxWidth + 2, y + radius + 2);
+                ctx.lineTo(x + boxWidth + 2, y + boxHeight - radius + 2);
+                ctx.quadraticCurveTo(x + boxWidth + 2, y + boxHeight + 2, x + boxWidth - radius + 2, y + boxHeight + 2);
+                ctx.lineTo(x + radius + 2, y + boxHeight + 2);
+                ctx.quadraticCurveTo(x + 2, y + boxHeight + 2, x + 2, y + boxHeight - radius + 2);
+                ctx.lineTo(x + 2, y + radius + 2);
+                ctx.quadraticCurveTo(x + 2, y + 2, x + radius + 2, y + 2);
                 ctx.closePath();
                 ctx.fill();
                 
@@ -530,8 +530,8 @@ Examples:
                 ctx.closePath();
                 ctx.fill();
                 
-                // Subtle border
-                ctx.strokeStyle = "rgba(255, 255, 255, 0.3)";
+                // Light border for definition
+                ctx.strokeStyle = "rgba(255, 255, 255, 0.4)";
                 ctx.lineWidth = 1;
                 ctx.stroke();
                 
@@ -543,11 +543,11 @@ Examples:
                 const totalTextHeight = lines.length * lineHeight;
                 let textY = y + (boxHeight - totalTextHeight) / 2 + lineHeight * 0.8;
                 
-                // Enhanced text shadow for corporate look
-                ctx.shadowColor = "rgba(0, 0, 0, 0.3)";
+                // Subtle text shadow for light backgrounds
+                ctx.shadowColor = "rgba(0, 0, 0, 0.2)";
                 ctx.shadowOffsetX = 1;
                 ctx.shadowOffsetY = 1;
-                ctx.shadowBlur = 3;
+                ctx.shadowBlur = 2;
                 
                 // Draw each line
                 lines.forEach((line, lineIndex) => {
