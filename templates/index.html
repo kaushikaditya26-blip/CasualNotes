@@ -110,9 +110,8 @@
         #napkinCanvas {
             display: block;
             background: #fffef8 url('https://www.transparenttextures.com/patterns/paper-fibers.png');
-            border: 3px solid #333;
+            border: none;
             border-radius: 12px;
-            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
             max-width: 100%;
             margin: 0 auto;
         }
@@ -120,12 +119,13 @@
         .canvas-container {
             max-height: 80vh;
             overflow-y: auto;
-            border: 3px solid #333;
+            border: 3px solid #2c3e50;
             border-radius: 15px;
-            background: #f9f9f9;
-            padding: 0;
-            margin: 20px auto;
-            max-width: 1006px;
+            background: #ffffff;
+            padding: 20px;
+            margin: 30px auto;
+            max-width: 1000px;
+            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
         }
         
         .loading {
@@ -334,9 +334,9 @@ Examples:
             
             // Calculate required canvas height based on content
             const boxHeight = 120;
-            const spacing = 30;
-            const titleSpace = 80;
-            const bottomPadding = 30;
+            const spacing = 25;
+            const titleSpace = 120;
+            const bottomPadding = 40;
             const requiredHeight = titleSpace + (napkin.sections.length * (boxHeight + spacing)) + bottomPadding;
             
             // Resize canvas if needed
@@ -366,19 +366,19 @@ Examples:
             ctx.textAlign = "center";
             ctx.fillStyle = "#1f2937";
             
-            // Draw professional title closer to top
-            ctx.font = "bold 32px 'Patrick Hand', cursive";
+            // Draw professional title
+            ctx.font = "bold 28px 'Patrick Hand', cursive";
             const titleText = napkin.title || "PROFESSIONAL INFOGRAPHIC";
             const titleX = canvas.width / 2;
-            ctx.fillText(titleText, titleX, 35);
+            ctx.fillText(titleText, titleX, 50);
             
             // Add subtle title underline
             ctx.strokeStyle = "#e5e7eb";
             ctx.lineWidth = 2;
             ctx.beginPath();
             const titleWidth = ctx.measureText(titleText).width;
-            ctx.moveTo(titleX - titleWidth/2 - 20, 48);
-            ctx.lineTo(titleX + titleWidth/2 + 20, 48);
+            ctx.moveTo(titleX - titleWidth/2 - 20, 65);
+            ctx.lineTo(titleX + titleWidth/2 + 20, 65);
             ctx.stroke();
             
             // Simple layout for sections
@@ -386,10 +386,10 @@ Examples:
         }
         
         function renderSimpleLayout(ctx, sections, colorMap) {
-            const boxWidth = 500;
+            const boxWidth = 480;
             const minBoxHeight = 100;
-            const spacing = 30;
-            const startY = 80;
+            const spacing = 25;
+            const startY = 100;
             let currentY = startY;
             
             sections.forEach((section, index) => {
