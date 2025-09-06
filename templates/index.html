@@ -292,7 +292,12 @@ Examples:
                 }
                 
                 // Render the napkin
-                renderNapkin(napkin);
+                try {
+                    renderNapkin(napkin);
+                } catch (renderError) {
+                    console.error("Render error:", renderError);
+                    throw new Error(`Rendering failed: ${renderError.message}`);
+                }
                 
                 // Enable download and JSON buttons
                 downloadBtn.disabled = false;
@@ -300,6 +305,11 @@ Examples:
                 
             } catch (error) {
                 console.error("Generation failed:", error);
+                console.error("Error details:", {
+                    name: error.name,
+                    message: error.message,
+                    stack: error.stack
+                });
                 
                 // More specific error handling
                 if (error instanceof TypeError && error.message.includes("fetch")) {
@@ -643,6 +653,21 @@ Examples:
                 </html>
             `);
         }
+
+        // Add global error handlers for debugging
+        window.addEventListener('unhandledrejection', function(event) {
+            console.error('Unhandled promise rejection:', event.reason);
+            console.error('Promise:', event.promise);
+            // Prevent the default browser error handling
+            event.preventDefault();
+        });
+
+        window.addEventListener('error', function(event) {
+            console.error('Global error:', event.error);
+            console.error('Message:', event.message);
+            console.error('Filename:', event.filename);
+            console.error('Line:', event.lineno);
+        });
 
         // Initialize word count on page load
         document.addEventListener("DOMContentLoaded", function() {
