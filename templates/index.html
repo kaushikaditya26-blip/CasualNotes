@@ -181,8 +181,8 @@ Examples:
 • Project plans and workflows
 • Key concepts and explanations  
 • Step-by-step processes
-• Ideas and brainstorming notes" maxlength="2500"></textarea>
-            <div id="wordCount" style="position: absolute; bottom: 10px; right: 15px; font-size: 12px; color: #666; background: rgba(255,255,255,0.8); padding: 2px 6px; border-radius: 3px;">0/500 words</div>
+• Ideas and brainstorming notes" maxlength="1500"></textarea>
+            <div id="wordCount" style="position: absolute; bottom: 10px; right: 15px; font-size: 12px; color: #666; background: rgba(255,255,255,0.8); padding: 2px 6px; border-radius: 3px;">0/200 words</div>
         </div>
         
         <div class="controls">
@@ -211,11 +211,11 @@ Examples:
             const text = this.value;
             const wordCount = countWords(text);
             const wordCountElement = document.getElementById("wordCount");
-            wordCountElement.textContent = `${wordCount}/500 words`;
+            wordCountElement.textContent = `${wordCount}/200 words`;
             
-            if (wordCount > 500) {
+            if (wordCount > 200) {
                 wordCountElement.style.color = "#dc2626";
-            } else if (wordCount > 400) {
+            } else if (wordCount > 160) {
                 wordCountElement.style.color = "#ea580c";
             } else {
                 wordCountElement.style.color = "#666";
@@ -240,8 +240,8 @@ Examples:
             
             // Check word limit
             const wordCount = countWords(input);
-            if (wordCount > 500) {
-                alert(`Please limit your input to 500 words. You currently have ${wordCount} words.`);
+            if (wordCount > 200) {
+                alert(`Please limit your input to 200 words. You currently have ${wordCount} words.`);
                 return;
             }
             
@@ -332,21 +332,12 @@ Examples:
                 throw new Error("Could not get canvas context");
             }
             
-            // Calculate required canvas height based on content
-            const boxHeight = 120;
-            const spacing = 25;
-            const titleSpace = 120;
-            const bottomPadding = 40;
-            const requiredHeight = titleSpace + (napkin.sections.length * (boxHeight + spacing)) + bottomPadding;
+            // First pass: calculate actual required height
+            const actualHeight = calculateActualHeight(ctx, napkin);
             
-            // Resize canvas if needed
-            const minHeight = 700;
-            const newHeight = Math.max(minHeight, requiredHeight);
-            if (canvas.height !== newHeight) {
-                canvas.height = newHeight;
-                // Re-run resize function to update display size
-                setTimeout(resizeCanvas, 100);
-            }
+            // Set canvas to exact height needed
+            canvas.height = actualHeight;
+            setTimeout(resizeCanvas, 50);
             
             // Clear canvas with clean white background
             ctx.fillStyle = "#ffffff";
@@ -383,6 +374,50 @@ Examples:
             
             // Simple layout for sections
             renderSimpleLayout(ctx, napkin.sections, colorMap);
+        }
+        
+        function calculateActualHeight(ctx, napkin) {
+            const boxWidth = 480;
+            const minBoxHeight = 100;
+            const spacing = 25;
+            const titleSpace = 100;
+            const bottomPadding = 30;
+            
+            let totalHeight = titleSpace;
+            
+            napkin.sections.forEach((section, index) => {
+                // Set font for accurate measurement
+                ctx.font = section.visual_weight === "heavy" ? "bold 20px 'Patrick Hand', cursive" : "18px 'Patrick Hand', cursive";
+                
+                // Calculate text wrapping to determine actual box height
+                const maxWidth = boxWidth - 60;
+                const lineHeight = 28;
+                const words = section.text.split(' ');
+                let lines = 1;
+                let currentLine = '';
+                
+                for (let n = 0; n < words.length; n++) {
+                    const testLine = currentLine + words[n] + ' ';
+                    const metrics = ctx.measureText(testLine);
+                    
+                    if (metrics.width > maxWidth && n > 0) {
+                        lines++;
+                        currentLine = words[n] + ' ';
+                    } else {
+                        currentLine = testLine;
+                    }
+                }
+                
+                const textHeight = lines * lineHeight;
+                const boxHeight = Math.max(minBoxHeight, textHeight + 40);
+                
+                totalHeight += boxHeight;
+                if (index < napkin.sections.length - 1) {
+                    totalHeight += spacing; // Add spacing between boxes
+                }
+            });
+            
+            return totalHeight + bottomPadding;
         }
         
         function renderSimpleLayout(ctx, sections, colorMap) {
@@ -563,7 +598,7 @@ Examples:
             const input = document.getElementById("input");
             if (input.value) {
                 const wordCount = countWords(input.value);
-                document.getElementById("wordCount").textContent = `${wordCount}/500 words`;
+                document.getElementById("wordCount").textContent = `${wordCount}/200 words`;
             }
         });
     </script>
