@@ -1,0 +1,545 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
+    <meta http-equiv="Pragma" content="no-cache">
+    <meta http-equiv="Expires" content="0">
+    <title>📝 CasualNotes.in</title>
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Patrick+Hand:wght@400&display=swap" rel="stylesheet">
+    
+    <!-- External Libraries -->
+    <script src="https://unpkg.com/roughjs@4.6.6/bundled/rough.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+    
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Patrick Hand', cursive;
+            background: #f0f0f0;
+            text-align: center;
+            margin: 0;
+            padding: 20px;
+            color: #333;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        
+        h1 {
+            font-size: 2.5em;
+            margin: 20px 0;
+            color: #2c3e50;
+        }
+        
+        #input {
+            width: 100%;
+            height: 140px;
+            padding: 15px 15px 35px 15px;
+            font-size: 16px;
+            font-family: 'Patrick Hand', cursive;
+            border: 2px solid #34495e;
+            border-radius: 8px;
+            background: white;
+            resize: vertical;
+            display: block;
+            box-sizing: border-box;
+        }
+        
+        #input:focus {
+            outline: none;
+            border-color: #3498db;
+            box-shadow: 0 0 10px rgba(52, 152, 219, 0.3);
+        }
+        
+        .controls {
+            margin: 20px 0;
+        }
+        
+        .controls button {
+            margin: 5px;
+            padding: 12px 20px;
+            font-size: 16px;
+            font-family: 'Patrick Hand', cursive;
+            font-weight: bold;
+            border: 2px solid #34495e;
+            border-radius: 6px;
+            background: white;
+            color: #2c3e50;
+            cursor: pointer;
+            transition: all 0.2s;
+        }
+        
+        .controls button:hover {
+            background: #34495e;
+            color: white;
+            transform: translateY(-1px);
+        }
+        
+        .controls button:active {
+            transform: translateY(0);
+        }
+        
+        .controls button:disabled {
+            opacity: 0.6;
+            cursor: not-allowed;
+            transform: none;
+        }
+        
+        #banner {
+            display: none;
+            margin: 10px auto;
+            width: 80%;
+            max-width: 600px;
+            background: #fff3cd;
+            color: #856404;
+            padding: 15px;
+            border: 1px solid #ffeeba;
+            border-radius: 6px;
+            font-size: 14px;
+        }
+        
+        #napkinCanvas {
+            display: block;
+            background: #fffef8 url('https://www.transparenttextures.com/patterns/paper-fibers.png');
+            border: 3px solid #333;
+            border-radius: 12px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+            max-width: 100%;
+            margin: 0 auto;
+        }
+        
+        .canvas-container {
+            max-height: 80vh;
+            overflow-y: auto;
+            border: 2px solid #ddd;
+            border-radius: 12px;
+            background: #f9f9f9;
+            padding: 10px;
+            margin: 20px auto;
+            max-width: 1020px;
+        }
+        
+        .loading {
+            display: none;
+            margin: 20px auto;
+            text-align: center;
+        }
+        
+        .loading-spinner {
+            border: 4px solid #f3f3f3;
+            border-top: 4px solid #3498db;
+            border-radius: 50%;
+            width: 40px;
+            height: 40px;
+            animation: spin 1s linear infinite;
+            margin: 0 auto 10px;
+        }
+        
+        @keyframes spin {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+        
+        @media (max-width: 768px) {
+            #input {
+                width: 95%;
+            }
+            
+            #napkinCanvas {
+                max-width: 95%;
+            }
+            
+            .controls button {
+                display: block;
+                width: 200px;
+                margin: 5px auto;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>📝 CasualNotes.in</h1>
+        
+        <div id="banner">
+            ⚠️ API unavailable — showing local fallback napkin
+        </div>
+        
+        <div style="position: relative; width: 80%; max-width: 600px; margin: 10px auto;">
+            <textarea id="input" placeholder="Paste or type your text here to convert it into a beautiful napkin-style infographic...
+
+Examples:
+• Project plans and workflows
+• Key concepts and explanations  
+• Step-by-step processes
+• Ideas and brainstorming notes" maxlength="2500"></textarea>
+            <div id="wordCount" style="position: absolute; bottom: 10px; right: 15px; font-size: 12px; color: #666; background: rgba(255,255,255,0.8); padding: 2px 6px; border-radius: 3px;">0/500 words</div>
+        </div>
+        
+        <div class="controls">
+            <button id="generateBtn" onclick="generateNapkin()">🎨 Generate Napkin</button>
+            <button id="downloadBtn" onclick="downloadPNG()" disabled>📸 Download PNG</button>
+            <button id="jsonBtn" onclick="showRawJSON()" disabled>🔍 Show Raw JSON</button>
+        </div>
+        
+        <div class="loading" id="loading">
+            <div class="loading-spinner"></div>
+            <p>Creating your napkin infographic...</p>
+        </div>
+        
+        <div class="canvas-container">
+            <canvas id="napkinCanvas" width="1000" height="700"></canvas>
+        </div>
+    </div>
+
+    <script>
+        let lastRaw = null;
+        let isGenerating = false;
+        let expandedBoxes = new Set(); // Track which boxes are expanded
+
+        // Word count functionality
+        document.getElementById("input").addEventListener("input", function() {
+            const text = this.value;
+            const wordCount = countWords(text);
+            const wordCountElement = document.getElementById("wordCount");
+            wordCountElement.textContent = `${wordCount}/500 words`;
+            
+            if (wordCount > 500) {
+                wordCountElement.style.color = "#dc2626";
+            } else if (wordCount > 400) {
+                wordCountElement.style.color = "#ea580c";
+            } else {
+                wordCountElement.style.color = "#666";
+            }
+        });
+
+        function countWords(text) {
+            return text.trim() === "" ? 0 : text.trim().split(/\s+/).length;
+        }
+
+        async function generateNapkin() {
+            const input = document.getElementById("input").value.trim();
+            const generateBtn = document.getElementById("generateBtn");
+            const downloadBtn = document.getElementById("downloadBtn");
+            const jsonBtn = document.getElementById("jsonBtn");
+            const loading = document.getElementById("loading");
+            
+            if (!input) {
+                alert("Please enter some text first!");
+                return;
+            }
+            
+            // Check word limit
+            const wordCount = countWords(input);
+            if (wordCount > 500) {
+                alert(`Please limit your input to 500 words. You currently have ${wordCount} words.`);
+                return;
+            }
+            
+            if (isGenerating) return;
+            
+            // Show loading state
+            isGenerating = true;
+            generateBtn.disabled = true;
+            downloadBtn.disabled = true;
+            jsonBtn.disabled = true;
+            loading.style.display = "block";
+            
+            try {
+                const response = await fetch("/generate", {
+                    method: "POST",
+                    headers: {
+                        "Content-Type": "application/json"
+                    },
+                    body: JSON.stringify({ text: input })
+                });
+                
+                if (!response.ok) {
+                    throw new Error(`HTTP ${response.status}: ${response.statusText}`);
+                }
+                
+                const napkin = await response.json();
+                console.log("Parsed napkin data:", napkin);
+                
+                // Validate the response structure
+                if (!napkin || typeof napkin !== 'object') {
+                    throw new Error("Invalid response format");
+                }
+                
+                if (!napkin.title || !napkin.sections) {
+                    console.error("Missing fields. Napkin object:", napkin);
+                    throw new Error("Missing required fields in response");
+                }
+                
+                // Store for raw JSON display
+                lastRaw = JSON.stringify(napkin, null, 2);
+                
+                // Show banner if fallback was used
+                const banner = document.getElementById("banner");
+                if (napkin.note && (napkin.note.includes("FALLBACK") || napkin.note.includes("ERROR"))) {
+                    banner.style.display = "block";
+                } else {
+                    banner.style.display = "none";
+                }
+                
+                // Render the napkin
+                renderNapkin(napkin);
+                
+                // Enable download and JSON buttons
+                downloadBtn.disabled = false;
+                jsonBtn.disabled = false;
+                
+            } catch (error) {
+                console.error("Generation failed:", error);
+                
+                // More specific error handling
+                if (error instanceof TypeError && error.message.includes("fetch")) {
+                    alert("Network error: Could not connect to server");
+                } else if (error.message.includes("JSON")) {
+                    alert("Server response format error");
+                } else {
+                    alert(`Failed to generate napkin: ${error.message}`);
+                }
+                
+                // Show error banner
+                document.getElementById("banner").style.display = "block";
+                
+            } finally {
+                // Hide loading state
+                isGenerating = false;
+                generateBtn.disabled = false;
+                loading.style.display = "none";
+            }
+        }
+
+        function renderNapkin(napkin) {
+            const canvas = document.getElementById("napkinCanvas");
+            if (!canvas) {
+                throw new Error("Canvas element not found");
+            }
+            
+            const ctx = canvas.getContext("2d");
+            if (!ctx) {
+                throw new Error("Could not get canvas context");
+            }
+            
+            // Calculate required canvas height based on content
+            const boxHeight = 120;
+            const spacing = 30;
+            const titleSpace = 120;
+            const bottomPadding = 50;
+            const requiredHeight = titleSpace + (napkin.sections.length * (boxHeight + spacing)) + bottomPadding;
+            
+            // Resize canvas if needed
+            const minHeight = 700;
+            const newHeight = Math.max(minHeight, requiredHeight);
+            if (canvas.height !== newHeight) {
+                canvas.height = newHeight;
+                // Re-run resize function to update display size
+                setTimeout(resizeCanvas, 100);
+            }
+            
+            // Clear canvas with clean white background
+            ctx.fillStyle = "#ffffff";
+            ctx.fillRect(0, 0, canvas.width, canvas.height);
+            
+            // Professional color palette
+            const colorMap = {
+                blue: "#2563eb",
+                green: "#059669", 
+                orange: "#ea580c",
+                red: "#dc2626",
+                purple: "#7c3aed",
+                teal: "#0891b2"
+            };
+            
+            // Set professional typography
+            ctx.textAlign = "center";
+            ctx.fillStyle = "#1f2937";
+            
+            // Draw professional title
+            ctx.font = "bold 32px 'Patrick Hand', cursive";
+            const titleText = napkin.title || "PROFESSIONAL INFOGRAPHIC";
+            const titleX = canvas.width / 2;
+            ctx.fillText(titleText, titleX, 50);
+            
+            // Add subtle title underline
+            ctx.strokeStyle = "#e5e7eb";
+            ctx.lineWidth = 2;
+            ctx.beginPath();
+            const titleWidth = ctx.measureText(titleText).width;
+            ctx.moveTo(titleX - titleWidth/2 - 20, 65);
+            ctx.lineTo(titleX + titleWidth/2 + 20, 65);
+            ctx.stroke();
+            
+            // Simple layout for sections
+            renderSimpleLayout(ctx, napkin.sections, colorMap);
+        }
+        
+        function renderSimpleLayout(ctx, sections, colorMap) {
+            const boxWidth = 400;
+            const boxHeight = 120;
+            const spacing = 30;
+            const startY = 120;
+            
+            sections.forEach((section, index) => {
+                const x = (ctx.canvas.width - boxWidth) / 2;
+                const y = startY + (index * (boxHeight + spacing));
+                
+                // Get color for section
+                const color = colorMap[section.color] || colorMap.blue;
+                
+                // Draw box with rounded corners
+                ctx.fillStyle = color;
+                ctx.strokeStyle = color;
+                ctx.lineWidth = 3;
+                
+                // Create rounded rectangle
+                const radius = 12;
+                ctx.beginPath();
+                ctx.moveTo(x + radius, y);
+                ctx.lineTo(x + boxWidth - radius, y);
+                ctx.quadraticCurveTo(x + boxWidth, y, x + boxWidth, y + radius);
+                ctx.lineTo(x + boxWidth, y + boxHeight - radius);
+                ctx.quadraticCurveTo(x + boxWidth, y + boxHeight, x + boxWidth - radius, y + boxHeight);
+                ctx.lineTo(x + radius, y + boxHeight);
+                ctx.quadraticCurveTo(x, y + boxHeight, x, y + boxHeight - radius);
+                ctx.lineTo(x, y + radius);
+                ctx.quadraticCurveTo(x, y, x + radius, y);
+                ctx.closePath();
+                
+                // Fill with semi-transparent color
+                ctx.globalAlpha = 0.1;
+                ctx.fill();
+                ctx.globalAlpha = 1.0;
+                ctx.stroke();
+                
+                // Draw text
+                ctx.fillStyle = color;
+                ctx.font = section.visual_weight === "heavy" ? "bold 20px 'Patrick Hand', cursive" : "18px 'Patrick Hand', cursive";
+                
+                // Wrap text
+                const maxWidth = boxWidth - 40;
+                const lineHeight = 25;
+                const words = section.text.split(' ');
+                let line = '';
+                let textY = y + boxHeight / 2 - 10;
+                
+                for (let n = 0; n < words.length; n++) {
+                    const testLine = line + words[n] + ' ';
+                    const metrics = ctx.measureText(testLine);
+                    const testWidth = metrics.width;
+                    
+                    if (testWidth > maxWidth && n > 0) {
+                        ctx.fillText(line, x + boxWidth / 2, textY);
+                        line = words[n] + ' ';
+                        textY += lineHeight;
+                    } else {
+                        line = testLine;
+                    }
+                }
+                ctx.fillText(line, x + boxWidth / 2, textY);
+                
+                // Add connecting arrow (except for last section)
+                if (index < sections.length - 1) {
+                    const arrowStartY = y + boxHeight + 5;
+                    const arrowEndY = arrowStartY + spacing - 10;
+                    const arrowX = ctx.canvas.width / 2;
+                    
+                    ctx.strokeStyle = "#6b7280";
+                    ctx.lineWidth = 2;
+                    ctx.beginPath();
+                    ctx.moveTo(arrowX, arrowStartY);
+                    ctx.lineTo(arrowX, arrowEndY);
+                    ctx.stroke();
+                    
+                    // Arrow head
+                    ctx.beginPath();
+                    ctx.moveTo(arrowX - 8, arrowEndY - 8);
+                    ctx.lineTo(arrowX, arrowEndY);
+                    ctx.lineTo(arrowX + 8, arrowEndY - 8);
+                    ctx.stroke();
+                }
+            });
+        }
+
+        function resizeCanvas() {
+            const canvas = document.getElementById("napkinCanvas");
+            const container = canvas.parentElement;
+            const containerWidth = container.clientWidth - 20; // Account for padding
+            
+            if (canvas.width > containerWidth) {
+                const scale = containerWidth / canvas.width;
+                canvas.style.width = containerWidth + "px";
+                canvas.style.height = (canvas.height * scale) + "px";
+            } else {
+                canvas.style.width = "";
+                canvas.style.height = "";
+            }
+        }
+
+        // Initialize canvas sizing
+        window.addEventListener("load", resizeCanvas);
+        window.addEventListener("resize", resizeCanvas);
+
+        function downloadPNG() {
+            const canvas = document.getElementById("napkinCanvas");
+            
+            html2canvas(canvas, {
+                backgroundColor: "#ffffff",
+                scale: 2
+            }).then(function(canvas) {
+                const link = document.createElement("a");
+                link.download = "napkin-infographic.png";
+                link.href = canvas.toDataURL();
+                link.click();
+            }).catch(function(error) {
+                console.error("Download failed:", error);
+                alert("Failed to download image. Please try again.");
+            });
+        }
+
+        function showRawJSON() {
+            if (!lastRaw) {
+                alert("No JSON data available. Please generate a napkin first.");
+                return;
+            }
+            
+            const popup = window.open("", "_blank", "width=600,height=400,scrollbars=yes");
+            popup.document.write(`
+                <html>
+                <head>
+                    <title>Raw JSON Data</title>
+                    <style>
+                        body { font-family: monospace; padding: 20px; background: #f5f5f5; }
+                        pre { background: white; padding: 15px; border-radius: 5px; overflow: auto; }
+                    </style>
+                </head>
+                <body>
+                    <h2>Raw JSON Data</h2>
+                    <pre>${lastRaw}</pre>
+                </body>
+                </html>
+            `);
+        }
+
+        // Initialize word count on page load
+        document.addEventListener("DOMContentLoaded", function() {
+            const input = document.getElementById("input");
+            if (input.value) {
+                const wordCount = countWords(input.value);
+                document.getElementById("wordCount").textContent = `${wordCount}/500 words`;
+            }
+        });
+    </script>
+</body>
+</html>
