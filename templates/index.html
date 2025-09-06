@@ -451,13 +451,13 @@ Examples:
                 ctx.closePath();
                 
                 // Fill with semi-transparent color
-                ctx.globalAlpha = 0.15;
+                ctx.globalAlpha = 0.25;
                 ctx.fill();
                 ctx.globalAlpha = 1.0;
                 ctx.stroke();
                 
-                // Draw text centered in box
-                ctx.fillStyle = color;
+                // Draw text centered in box with dark color for better contrast
+                ctx.fillStyle = "#1a1a1a"; // Dark gray for excellent readability
                 ctx.textAlign = "center";
                 
                 // Calculate starting Y to center text vertically
