@@ -343,14 +343,14 @@ Examples:
             ctx.fillStyle = "#ffffff";
             ctx.fillRect(0, 0, canvas.width, canvas.height);
             
-            // Enhanced professional color palette
+            // Modern corporate color palette
             const colorMap = {
-                blue: "#1e40af",
-                green: "#047857", 
-                orange: "#d97706",
-                red: "#b91c1c",
-                purple: "#6d28d9",
-                teal: "#0f766e"
+                blue: "#1e3a8a",
+                green: "#065f46", 
+                orange: "#c2410c",
+                red: "#991b1b",
+                purple: "#581c87",
+                teal: "#134e4a"
             };
             
             // Text colors for optimal contrast
@@ -367,8 +367,8 @@ Examples:
             ctx.textAlign = "center";
             ctx.fillStyle = "#0f172a";
             
-            // Draw professional title with shadow effect
-            ctx.font = "bold 30px 'Patrick Hand', cursive";
+            // Draw professional title with modern typography
+            ctx.font = "bold 32px 'Segoe UI', 'Roboto', 'Helvetica Neue', 'Arial', sans-serif";
             const titleText = napkin.title || "PROFESSIONAL INFOGRAPHIC";
             const titleX = canvas.width / 2;
             
@@ -380,11 +380,15 @@ Examples:
             ctx.fillStyle = "#0f172a";
             ctx.fillText(titleText, titleX, 50);
             
-            // Add elegant title underline
-            ctx.strokeStyle = "#3b82f6";
-            ctx.lineWidth = 3;
-            ctx.beginPath();
+            // Modern gradient underline
             const titleWidth = ctx.measureText(titleText).width;
+            const gradient = ctx.createLinearGradient(titleX - titleWidth/2 - 20, 68, titleX + titleWidth/2 + 20, 68);
+            gradient.addColorStop(0, "#3b82f6");
+            gradient.addColorStop(0.5, "#1d4ed8");
+            gradient.addColorStop(1, "#3b82f6");
+            ctx.strokeStyle = gradient;
+            ctx.lineWidth = 4;
+            ctx.beginPath();
             ctx.moveTo(titleX - titleWidth/2 - 20, 68);
             ctx.lineTo(titleX + titleWidth/2 + 20, 68);
             ctx.stroke();
@@ -404,7 +408,7 @@ Examples:
             
             napkin.sections.forEach((section, index) => {
                 // Set font for accurate measurement
-                ctx.font = section.visual_weight === "heavy" ? "bold 20px 'Patrick Hand', cursive" : "18px 'Patrick Hand', cursive";
+                ctx.font = section.visual_weight === "heavy" ? "bold 20px 'Segoe UI', 'Roboto', 'Helvetica Neue', 'Arial', sans-serif" : "18px 'Segoe UI', 'Roboto', 'Helvetica Neue', 'Arial', sans-serif";
                 
                 // Calculate text wrapping to determine actual box height
                 const maxWidth = boxWidth - 60;
@@ -448,7 +452,7 @@ Examples:
                 const x = (ctx.canvas.width - boxWidth) / 2;
                 
                 // Set font before calculating text
-                ctx.font = section.visual_weight === "heavy" ? "bold 20px 'Patrick Hand', cursive" : "18px 'Patrick Hand', cursive";
+                ctx.font = section.visual_weight === "heavy" ? "bold 20px 'Segoe UI', 'Roboto', 'Helvetica Neue', 'Arial', sans-serif" : "18px 'Segoe UI', 'Roboto', 'Helvetica Neue', 'Arial', sans-serif";
                 
                 // Calculate text wrapping first to determine box height
                 const maxWidth = boxWidth - 60; // More padding
@@ -483,13 +487,26 @@ Examples:
                 // Get color for section
                 const color = colorMap[section.color] || colorMap.blue;
                 
-                // Draw box with rounded corners
-                ctx.fillStyle = color;
-                ctx.strokeStyle = color;
-                ctx.lineWidth = 3;
+                // Corporate-style box with enhanced shadow and border
+                const radius = 8;
                 
-                // Create rounded rectangle
-                const radius = 12;
+                // First draw shadow
+                ctx.fillStyle = "rgba(0, 0, 0, 0.15)";
+                ctx.beginPath();
+                ctx.moveTo(x + radius + 3, y + 3);
+                ctx.lineTo(x + boxWidth - radius + 3, y + 3);
+                ctx.quadraticCurveTo(x + boxWidth + 3, y + 3, x + boxWidth + 3, y + radius + 3);
+                ctx.lineTo(x + boxWidth + 3, y + boxHeight - radius + 3);
+                ctx.quadraticCurveTo(x + boxWidth + 3, y + boxHeight + 3, x + boxWidth - radius + 3, y + boxHeight + 3);
+                ctx.lineTo(x + radius + 3, y + boxHeight + 3);
+                ctx.quadraticCurveTo(x + 3, y + boxHeight + 3, x + 3, y + boxHeight - radius + 3);
+                ctx.lineTo(x + 3, y + radius + 3);
+                ctx.quadraticCurveTo(x + 3, y + 3, x + radius + 3, y + 3);
+                ctx.closePath();
+                ctx.fill();
+                
+                // Main box background
+                ctx.fillStyle = color;
                 ctx.beginPath();
                 ctx.moveTo(x + radius, y);
                 ctx.lineTo(x + boxWidth - radius, y);
@@ -501,11 +518,11 @@ Examples:
                 ctx.lineTo(x, y + radius);
                 ctx.quadraticCurveTo(x, y, x + radius, y);
                 ctx.closePath();
-                
-                // Fill with more opaque color for better contrast
-                ctx.globalAlpha = 0.85;
                 ctx.fill();
-                ctx.globalAlpha = 1.0;
+                
+                // Subtle border
+                ctx.strokeStyle = "rgba(255, 255, 255, 0.3)";
+                ctx.lineWidth = 1;
                 ctx.stroke();
                 
                 // Use white text for optimal contrast on colored backgrounds
@@ -516,11 +533,11 @@ Examples:
                 const totalTextHeight = lines.length * lineHeight;
                 let textY = y + (boxHeight - totalTextHeight) / 2 + lineHeight * 0.8;
                 
-                // Add subtle text shadow for depth
-                ctx.shadowColor = "rgba(0, 0, 0, 0.15)";
+                // Enhanced text shadow for corporate look
+                ctx.shadowColor = "rgba(0, 0, 0, 0.3)";
                 ctx.shadowOffsetX = 1;
                 ctx.shadowOffsetY = 1;
-                ctx.shadowBlur = 2;
+                ctx.shadowBlur = 3;
                 
                 // Draw each line
                 lines.forEach((line, lineIndex) => {
