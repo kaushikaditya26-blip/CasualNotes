@@ -377,30 +377,75 @@ Examples:
             ctx.textAlign = "center";
             ctx.fillStyle = "#0f172a";
             
-            // Draw professional title with modern typography
-            ctx.font = "bold 32px 'Segoe UI', 'Roboto', 'Helvetica Neue', 'Arial', sans-serif";
-            const titleText = napkin.title || "PROFESSIONAL INFOGRAPHIC";
+            // Draw professional title with text wrapping
+            let titleText = napkin.title || "PROFESSIONAL INFOGRAPHIC";
             const titleX = canvas.width / 2;
+            const maxTitleWidth = canvas.width - 80; // Leave margin on both sides
             
-            // Add subtle shadow
-            ctx.fillStyle = "rgba(0, 0, 0, 0.1)";
-            ctx.fillText(titleText, titleX + 2, 52);
+            // Start with larger font and scale down if needed
+            let fontSize = 32;
+            ctx.font = `bold ${fontSize}px 'Segoe UI', 'Roboto', 'Helvetica Neue', 'Arial', sans-serif`;
             
-            // Main title
-            ctx.fillStyle = "#0f172a";
-            ctx.fillText(titleText, titleX, 50);
+            // Check if title fits, if not reduce font size or wrap text
+            let titleWidth = ctx.measureText(titleText).width;
+            while (titleWidth > maxTitleWidth && fontSize > 18) {
+                fontSize -= 2;
+                ctx.font = `bold ${fontSize}px 'Segoe UI', 'Roboto', 'Helvetica Neue', 'Arial', sans-serif`;
+                titleWidth = ctx.measureText(titleText).width;
+            }
             
-            // Modern gradient underline
-            const titleWidth = ctx.measureText(titleText).width;
-            const gradient = ctx.createLinearGradient(titleX - titleWidth/2 - 20, 68, titleX + titleWidth/2 + 20, 68);
+            // If still too wide, wrap the text
+            let titleLines = [];
+            if (titleWidth > maxTitleWidth) {
+                const words = titleText.split(' ');
+                let currentLine = '';
+                
+                for (let word of words) {
+                    const testLine = currentLine + (currentLine ? ' ' : '') + word;
+                    const testWidth = ctx.measureText(testLine).width;
+                    
+                    if (testWidth > maxTitleWidth && currentLine) {
+                        titleLines.push(currentLine);
+                        currentLine = word;
+                    } else {
+                        currentLine = testLine;
+                    }
+                }
+                if (currentLine) titleLines.push(currentLine);
+            } else {
+                titleLines = [titleText];
+            }
+            
+            // Calculate starting Y position for centered titles
+            const lineHeight = fontSize * 1.2;
+            const totalTitleHeight = titleLines.length * lineHeight;
+            let titleY = 40 + (titleLines.length === 1 ? lineHeight : lineHeight * 0.8);
+            
+            // Draw each title line
+            titleLines.forEach((line, index) => {
+                // Add subtle shadow
+                ctx.fillStyle = "rgba(0, 0, 0, 0.1)";
+                ctx.fillText(line, titleX + 2, titleY + 2);
+                
+                // Main title
+                ctx.fillStyle = "#0f172a";
+                ctx.fillText(line, titleX, titleY);
+                
+                titleY += lineHeight;
+            });
+            
+            // Modern gradient underline under the last line
+            const lastLineWidth = ctx.measureText(titleLines[titleLines.length - 1]).width;
+            const underlineY = titleY - lineHeight + 18;
+            const gradient = ctx.createLinearGradient(titleX - lastLineWidth/2 - 20, underlineY, titleX + lastLineWidth/2 + 20, underlineY);
             gradient.addColorStop(0, "#3b82f6");
             gradient.addColorStop(0.5, "#1d4ed8");
             gradient.addColorStop(1, "#3b82f6");
             ctx.strokeStyle = gradient;
             ctx.lineWidth = 4;
             ctx.beginPath();
-            ctx.moveTo(titleX - titleWidth/2 - 20, 68);
-            ctx.lineTo(titleX + titleWidth/2 + 20, 68);
+            ctx.moveTo(titleX - lastLineWidth/2 - 20, underlineY);
+            ctx.lineTo(titleX + lastLineWidth/2 + 20, underlineY);
             ctx.stroke();
             
             // Simple layout for sections
@@ -411,7 +456,7 @@ Examples:
             const boxWidth = 480;
             const minBoxHeight = 100;
             const spacing = 25;
-            const titleSpace = 100;
+            const titleSpace = 120; // Increased for better title spacing
             const bottomPadding = 30;
             
             let totalHeight = titleSpace;
@@ -455,7 +500,7 @@ Examples:
             const boxWidth = 480;
             const minBoxHeight = 100;
             const spacing = 25;
-            const startY = 100;
+            const startY = 120;
             let currentY = startY;
             
             sections.forEach((section, index) => {
