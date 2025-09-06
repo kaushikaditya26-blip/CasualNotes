@@ -343,37 +343,54 @@ Examples:
             ctx.fillStyle = "#ffffff";
             ctx.fillRect(0, 0, canvas.width, canvas.height);
             
-            // Professional color palette
+            // Enhanced professional color palette
             const colorMap = {
-                blue: "#2563eb",
-                green: "#059669", 
-                orange: "#ea580c",
-                red: "#dc2626",
-                purple: "#7c3aed",
-                teal: "#0891b2"
+                blue: "#1e40af",
+                green: "#047857", 
+                orange: "#d97706",
+                red: "#b91c1c",
+                purple: "#6d28d9",
+                teal: "#0f766e"
             };
             
-            // Set professional typography
-            ctx.textAlign = "center";
-            ctx.fillStyle = "#1f2937";
+            // Text colors for optimal contrast
+            const textColorMap = {
+                blue: "#ffffff",
+                green: "#ffffff", 
+                orange: "#ffffff",
+                red: "#ffffff",
+                purple: "#ffffff",
+                teal: "#ffffff"
+            };
             
-            // Draw professional title
-            ctx.font = "bold 28px 'Patrick Hand', cursive";
+            // Set professional typography with enhanced contrast
+            ctx.textAlign = "center";
+            ctx.fillStyle = "#0f172a";
+            
+            // Draw professional title with shadow effect
+            ctx.font = "bold 30px 'Patrick Hand', cursive";
             const titleText = napkin.title || "PROFESSIONAL INFOGRAPHIC";
             const titleX = canvas.width / 2;
+            
+            // Add subtle shadow
+            ctx.fillStyle = "rgba(0, 0, 0, 0.1)";
+            ctx.fillText(titleText, titleX + 2, 52);
+            
+            // Main title
+            ctx.fillStyle = "#0f172a";
             ctx.fillText(titleText, titleX, 50);
             
-            // Add subtle title underline
-            ctx.strokeStyle = "#e5e7eb";
-            ctx.lineWidth = 2;
+            // Add elegant title underline
+            ctx.strokeStyle = "#3b82f6";
+            ctx.lineWidth = 3;
             ctx.beginPath();
             const titleWidth = ctx.measureText(titleText).width;
-            ctx.moveTo(titleX - titleWidth/2 - 20, 65);
-            ctx.lineTo(titleX + titleWidth/2 + 20, 65);
+            ctx.moveTo(titleX - titleWidth/2 - 20, 68);
+            ctx.lineTo(titleX + titleWidth/2 + 20, 68);
             ctx.stroke();
             
             // Simple layout for sections
-            renderSimpleLayout(ctx, napkin.sections, colorMap);
+            renderSimpleLayout(ctx, napkin.sections, colorMap, textColorMap);
         }
         
         function calculateActualHeight(ctx, napkin) {
@@ -420,7 +437,7 @@ Examples:
             return totalHeight + bottomPadding;
         }
         
-        function renderSimpleLayout(ctx, sections, colorMap) {
+        function renderSimpleLayout(ctx, sections, colorMap, textColorMap) {
             const boxWidth = 480;
             const minBoxHeight = 100;
             const spacing = 25;
@@ -485,25 +502,34 @@ Examples:
                 ctx.quadraticCurveTo(x, y, x + radius, y);
                 ctx.closePath();
                 
-                // Fill with semi-transparent color
-                ctx.globalAlpha = 0.25;
+                // Fill with more opaque color for better contrast
+                ctx.globalAlpha = 0.85;
                 ctx.fill();
                 ctx.globalAlpha = 1.0;
                 ctx.stroke();
                 
-                // Draw text centered in box with dark color for better contrast
-                ctx.fillStyle = "#1a1a1a"; // Dark gray for excellent readability
+                // Use white text for optimal contrast on colored backgrounds
+                ctx.fillStyle = textColorMap[section.color] || "#ffffff";
                 ctx.textAlign = "center";
                 
                 // Calculate starting Y to center text vertically
                 const totalTextHeight = lines.length * lineHeight;
                 let textY = y + (boxHeight - totalTextHeight) / 2 + lineHeight * 0.8;
                 
+                // Add subtle text shadow for depth
+                ctx.shadowColor = "rgba(0, 0, 0, 0.15)";
+                ctx.shadowOffsetX = 1;
+                ctx.shadowOffsetY = 1;
+                ctx.shadowBlur = 2;
+                
                 // Draw each line
                 lines.forEach((line, lineIndex) => {
                     ctx.fillText(line, x + boxWidth / 2, textY);
                     textY += lineHeight;
                 });
+                
+                // Reset shadow
+                ctx.shadowColor = "transparent";
                 
                 // Update currentY for next box
                 currentY = y + boxHeight + spacing;
@@ -514,21 +540,29 @@ Examples:
                     const arrowEndY = currentY - 8;
                     const arrowX = ctx.canvas.width / 2;
                     
-                    ctx.strokeStyle = "#6b7280";
-                    ctx.lineWidth = 3;
+                    ctx.strokeStyle = "#475569";
+                    ctx.lineWidth = 4;
                     ctx.beginPath();
                     ctx.moveTo(arrowX, arrowStartY);
                     ctx.lineTo(arrowX, arrowEndY);
                     ctx.stroke();
                     
-                    // Arrow head
-                    ctx.fillStyle = "#6b7280";
+                    // Enhanced arrow head with shadow
+                    ctx.shadowColor = "rgba(0, 0, 0, 0.2)";
+                    ctx.shadowOffsetX = 1;
+                    ctx.shadowOffsetY = 1;
+                    ctx.shadowBlur = 2;
+                    
+                    ctx.fillStyle = "#475569";
                     ctx.beginPath();
-                    ctx.moveTo(arrowX - 10, arrowEndY - 10);
+                    ctx.moveTo(arrowX - 12, arrowEndY - 12);
                     ctx.lineTo(arrowX, arrowEndY);
-                    ctx.lineTo(arrowX + 10, arrowEndY - 10);
+                    ctx.lineTo(arrowX + 12, arrowEndY - 12);
                     ctx.closePath();
                     ctx.fill();
+                    
+                    // Reset shadow
+                    ctx.shadowColor = "transparent";
                 }
             });
         }
