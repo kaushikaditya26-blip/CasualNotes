@@ -386,14 +386,47 @@ Examples:
         }
         
         function renderSimpleLayout(ctx, sections, colorMap) {
-            const boxWidth = 400;
-            const boxHeight = 120;
+            const boxWidth = 500;
+            const minBoxHeight = 100;
             const spacing = 30;
             const startY = 120;
+            let currentY = startY;
             
             sections.forEach((section, index) => {
                 const x = (ctx.canvas.width - boxWidth) / 2;
-                const y = startY + (index * (boxHeight + spacing));
+                
+                // Set font before calculating text
+                ctx.font = section.visual_weight === "heavy" ? "bold 20px 'Patrick Hand', cursive" : "18px 'Patrick Hand', cursive";
+                
+                // Calculate text wrapping first to determine box height
+                const maxWidth = boxWidth - 60; // More padding
+                const lineHeight = 28;
+                const words = section.text.split(' ');
+                const lines = [];
+                let currentLine = '';
+                
+                // Build lines array
+                for (let n = 0; n < words.length; n++) {
+                    const testLine = currentLine + words[n] + ' ';
+                    const metrics = ctx.measureText(testLine);
+                    const testWidth = metrics.width;
+                    
+                    if (testWidth > maxWidth && n > 0) {
+                        lines.push(currentLine.trim());
+                        currentLine = words[n] + ' ';
+                    } else {
+                        currentLine = testLine;
+                    }
+                }
+                if (currentLine.trim()) {
+                    lines.push(currentLine.trim());
+                }
+                
+                // Calculate box height based on text lines
+                const textHeight = lines.length * lineHeight;
+                const boxHeight = Math.max(minBoxHeight, textHeight + 40); // Add padding
+                
+                const y = currentY;
                 
                 // Get color for section
                 const color = colorMap[section.color] || colorMap.blue;
@@ -418,56 +451,49 @@ Examples:
                 ctx.closePath();
                 
                 // Fill with semi-transparent color
-                ctx.globalAlpha = 0.1;
+                ctx.globalAlpha = 0.15;
                 ctx.fill();
                 ctx.globalAlpha = 1.0;
                 ctx.stroke();
                 
-                // Draw text
+                // Draw text centered in box
                 ctx.fillStyle = color;
-                ctx.font = section.visual_weight === "heavy" ? "bold 20px 'Patrick Hand', cursive" : "18px 'Patrick Hand', cursive";
+                ctx.textAlign = "center";
                 
-                // Wrap text
-                const maxWidth = boxWidth - 40;
-                const lineHeight = 25;
-                const words = section.text.split(' ');
-                let line = '';
-                let textY = y + boxHeight / 2 - 10;
+                // Calculate starting Y to center text vertically
+                const totalTextHeight = lines.length * lineHeight;
+                let textY = y + (boxHeight - totalTextHeight) / 2 + lineHeight * 0.8;
                 
-                for (let n = 0; n < words.length; n++) {
-                    const testLine = line + words[n] + ' ';
-                    const metrics = ctx.measureText(testLine);
-                    const testWidth = metrics.width;
-                    
-                    if (testWidth > maxWidth && n > 0) {
-                        ctx.fillText(line, x + boxWidth / 2, textY);
-                        line = words[n] + ' ';
-                        textY += lineHeight;
-                    } else {
-                        line = testLine;
-                    }
-                }
-                ctx.fillText(line, x + boxWidth / 2, textY);
+                // Draw each line
+                lines.forEach((line, lineIndex) => {
+                    ctx.fillText(line, x + boxWidth / 2, textY);
+                    textY += lineHeight;
+                });
+                
+                // Update currentY for next box
+                currentY = y + boxHeight + spacing;
                 
                 // Add connecting arrow (except for last section)
                 if (index < sections.length - 1) {
-                    const arrowStartY = y + boxHeight + 5;
-                    const arrowEndY = arrowStartY + spacing - 10;
+                    const arrowStartY = y + boxHeight + 8;
+                    const arrowEndY = currentY - 8;
                     const arrowX = ctx.canvas.width / 2;
                     
                     ctx.strokeStyle = "#6b7280";
-                    ctx.lineWidth = 2;
+                    ctx.lineWidth = 3;
                     ctx.beginPath();
                     ctx.moveTo(arrowX, arrowStartY);
                     ctx.lineTo(arrowX, arrowEndY);
                     ctx.stroke();
                     
                     // Arrow head
+                    ctx.fillStyle = "#6b7280";
                     ctx.beginPath();
-                    ctx.moveTo(arrowX - 8, arrowEndY - 8);
+                    ctx.moveTo(arrowX - 10, arrowEndY - 10);
                     ctx.lineTo(arrowX, arrowEndY);
-                    ctx.lineTo(arrowX + 8, arrowEndY - 8);
-                    ctx.stroke();
+                    ctx.lineTo(arrowX + 10, arrowEndY - 10);
+                    ctx.closePath();
+                    ctx.fill();
                 }
             });
         }
