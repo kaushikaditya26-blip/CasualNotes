@@ -17,7 +17,8 @@ app.secret_key = os.environ.get("SESSION_SECRET", "dev-secret-key-change-in-prod
 
 # Initialize Gemini client
 try:
-    client = genai.Client(api_key=os.environ.get("GEMINI_API_KEY"))
+    genai.configure(api_key=os.environ.get("GEMINI_API_KEY"))
+    client = genai
 except Exception as e:
     logging.error(f"Failed to initialize Gemini client: {e}")
     client = None
