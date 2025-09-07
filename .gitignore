@@ -1,0 +1,39 @@
+# ---- Python ----
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.so
+
+# ---- Virtual Environments ----
+venv/
+.env/
+.venv/
+
+# ---- Environment & Secrets ----
+*.env
+.env.*
+secrets.json
+
+# ---- Logs ----
+*.log
+logs/
+*.out
+*.err
+
+# ---- OS files ----
+.DS_Store
+Thumbs.db
+
+# ---- IDE files ----
+.vscode/
+.idea/
+
+# ---- Build / Packaging ----
+build/
+dist/
+*.egg-info/
+
+# ---- Custom Ignore ----
+google/   # Prevents local google/ folder from shadowing the real google package
+
