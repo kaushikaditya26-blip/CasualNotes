@@ -1,0 +1,641 @@
+
+==== 2025-09-06 16:21:46.252997 ====
+NOTE: Used gemini-2.5-flash
+USER INPUT:
+NBFCs have to keep at least 9% of the value of their risky loans and investments backed by solid money of their own — like share capital, reserves, and past profits kept aside.
+But they cannot count “soft stuff” like goodwill, tax credits, money put into group companies, or unrealised paper gains, because those may not actually be available in a crisis.
+This way, the CET1 ratio shows the genuine financial strength of the NBFC — the part that can actually absorb losses — instead of numbers boosted by accounting adjustments.
+RAW OUTPUT:
+{
+  "title": "NBFCs' CET1 Ratio: The Foundation of Financial Strength",
+  "layout": "concept_map",
+  "visual_flow": "center_radial",
+  "sections": [
+    {
+      "role": "main_concept",
+      "text": "NBFCs' CET1 Ratio: Genuine Financial Strength",
+      "color": "blue",
+      "emphasis": "primary",
+      "visual_weight": "heavy"
+    },
+    {
+      "role": "supporting_point",
+      "text": "Core Requirement: 9% of Risky Assets Backed by Solid Capital",
+      "color": "green",
+      "emphasis": "secondary",
+      "visual_weight": "medium"
+    },
+    {
+      "role": "supporting_point",
+      "text": "Included: Share Capital, Reserves, Retained Profits",
+      "color": "teal",
+      "emphasis": "secondary",
+      "visual_weight": "medium"
+    },
+    {
+      "role": "supporting_point",
+      "text": "Excluded: 'Soft' Assets like Goodwill, Tax Credits, Unrealized Gains, Group Investments",
+      "color": "red",
+      "emphasis": "secondary",
+      "visual_weight": "medium"
+    },
+    {
+      "role": "conclusion",
+      "text": "Purpose: Reflect True Loss Absorption Capacity, Beyond Accounting Adjustments",
+      "color": "purple",
+      "emphasis": "secondary",
+      "visual_weight": "medium"
+    }
+  ]
+}
+
+==== 2025-09-06 17:21:10.442402 ====
+NOTE: Used gemini-2.5-flash
+USER INPUT:
+NBFC – Scale-Based Regulation (SBR), 2023
+Governs capital norms, exposure limits, and governance based on an NBFC’s size and systemic importance. 
+Reserve Bank of India
+Non-Banking Financial Companies – Acceptance of Public Deposits, 2016
+Sets the rules and restrictions on how NBFCs can accept deposits, including interest caps, tenure, and regulatory safeguards. 
+Reserve Bank of India
+Residuary Non-Banking Companies Directions, 2016
+Lays down special rules for NBFCs that raise funds through unique schemes or subscriptions that don’t neatly fall into deposit classification. 
+Reserve Bank of India
+Know Your Customer (KYC) Direction, 2016 (and updates)
+Defines anti-money laundering norms, due diligence, identity checks, and customer risk profiling for financial institutions.
+RAW OUTPUT:
+{
+  "title": "Key NBFC Regulations by RBI",
+  "layout": "concept_map",
+  "visual_flow": "center_radial",
+  "sections": [
+    {
+      "role": "main_concept",
+      "text": "NBFC Regulatory Framework by Reserve Bank of India",
+      "color": "blue",
+      "emphasis": "primary",
+      "visual_weight": "heavy"
+    },
+    {
+      "role": "supporting_point",
+      "text": "Scale-Based Regulation (SBR), 2023: Governs capital norms, exposure limits, and governance based on an NBFC’s size and systemic importance.",
+      "color": "green",
+      "emphasis": "secondary",
+      "visual_weight": "medium"
+    },
+    {
+      "role": "supporting_point",
+      "text": "Acceptance of Public Deposits, 2016: Sets rules and restrictions on how NBFCs can accept deposits, including interest caps, tenure, and regulatory safeguards.",
+      "color": "orange",
+      "emphasis": "secondary",
+      "visual_weight": "medium"
+    },
+    {
+      "role": "supporting_point",
+      "text": "Residuary Non-Banking Companies Directions, 2016: Lays down special rules for NBFCs that raise funds through unique schemes or subscriptions.",
+      "color": "red",
+      "emphasis": "secondary",
+      "visual_weight": "medium"
+    },
+    {
+      "role": "supporting_point",
+      "text": "Know Your Customer (KYC) Direction, 2016 (and updates): Defines anti-money laundering norms, due diligence, identity checks, and customer risk profiling.",
+      "color": "purple",
+      "emphasis": "secondary",
+      "visual_weight": "medium"
+    }
+  ]
+}
+
+==== 2025-09-06 17:21:43.986962 ====
+NOTE: Used gemini-2.5-flash
+USER INPUT:
+NBFC – Scale-Based Regulation (SBR), 2023
+Governs capital norms, exposure limits, and governance based on an NBFC’s size and systemic importance. 
+Reserve Bank of India
+Non-Banking Financial Companies – Acceptance of Public Deposits, 2016
+Sets the rules and restrictions on how NBFCs can accept deposits, including interest caps, tenure, and regulatory safeguards. 
+Reserve Bank of India
+Residuary Non-Banking Companies Directions, 2016
+Lays down special rules for NBFCs that raise funds through unique schemes or subscriptions that don’t neatly fall into deposit classification. 
+Reserve Bank of India
+Know Your Customer (KYC) Direction, 2016 (and updates)
+Defines anti-money laundering norms, due diligence, identity checks, and customer risk profiling for financial institutions.
+RAW OUTPUT:
+{
+  "title": "Key Regulations for Non-Banking Financial Companies (NBFCs)",
+  "layout": "concept_map",
+  "visual_flow": "center_radial",
+  "sections": [
+    {
+      "role": "main_concept",
+      "text": "NBFC Regulations by Reserve Bank of India",
+      "color": "blue",
+      "emphasis": "primary",
+      "visual_weight": "heavy"
+    },
+    {
+      "role": "supporting_point",
+      "text": "Scale-Based Regulation (SBR), 2023: Governs capital norms, exposure limits, and governance based on NBFC's size and systemic importance.",
+      "color": "green",
+      "emphasis": "secondary",
+      "visual_weight": "medium"
+    },
+    {
+      "role": "supporting_point",
+      "text": "Acceptance of Public Deposits, 2016: Sets rules and restrictions on how NBFCs can accept deposits, including interest caps and tenure.",
+      "color": "orange",
+      "emphasis": "secondary",
+      "visual_weight": "medium"
+    },
+    {
+      "role": "supporting_point",
+      "text": "Residuary NBFC Directions, 2016: Special rules for NBFCs that raise funds through unique schemes or subscriptions not classified as deposits.",
+      "color": "red",
+      "emphasis": "secondary",
+      "visual_weight": "medium"
+    },
+    {
+      "role": "supporting_point",
+      "text": "Know Your Customer (KYC) Direction, 2016 (and updates): Defines anti-money laundering norms, due diligence, identity checks, and customer risk profiling.",
+      "color": "purple",
+      "emphasis": "secondary",
+      "visual_weight": "medium"
+    }
+  ]
+}
+
+==== 2025-09-06 17:24:14.511301 ====
+NOTE: Used gemini-2.5-flash
+USER INPUT:
+NBFC – Scale-Based Regulation (SBR), 2023
+Governs capital norms, exposure limits, and governance based on an NBFC’s size and systemic importance. 
+Reserve Bank of India
+Non-Banking Financial Companies – Acceptance of Public Deposits, 2016
+Sets the rules and restrictions on how NBFCs can accept deposits, including interest caps, tenure, and regulatory safeguards. 
+Reserve Bank of India
+Residuary Non-Banking Companies Directions, 2016
+Lays down special rules for NBFCs that raise funds through unique schemes or subscriptions that don’t neatly fall into deposit classification. 
+Reserve Bank of India
+Know Your Customer (KYC) Direction, 2016 (and updates)
+Defines anti-money laundering norms, due diligence, identity checks, and customer risk profiling for financial institutions.
+RAW OUTPUT:
+{
+  "title": "NBFC Regulatory Framework",
+  "layout": "concept_map",
+  "visual_flow": "center_radial",
+  "sections": [
+    {
+      "role": "main_concept",
+      "text": "Key Regulations Governing NBFCs by Reserve Bank of India",
+      "color": "blue",
+      "emphasis": "primary",
+      "visual_weight": "heavy"
+    },
+    {
+      "role": "supporting_point",
+      "text": "Scale-Based Regulation (SBR), 2023: Governs capital norms, exposure limits, and governance based on an NBFC’s size and systemic importance.",
+      "color": "green",
+      "emphasis": "secondary",
+      "visual_weight": "medium"
+    },
+    {
+      "role": "supporting_point",
+      "text": "Acceptance of Public Deposits, 2016: Sets rules and restrictions on how NBFCs can accept deposits, including interest caps, tenure, and regulatory safeguards.",
+      "color": "orange",
+      "emphasis": "secondary",
+      "visual_weight": "medium"
+    },
+    {
+      "role": "supporting_point",
+      "text": "Residuary NBFC Directions, 2016: Lays down special rules for NBFCs that raise funds through unique schemes or subscriptions not falling into deposit classification.",
+      "color": "red",
+      "emphasis": "secondary",
+      "visual_weight": "medium"
+    },
+    {
+      "role": "supporting_point",
+      "text": "Know Your Customer (KYC) Direction, 2016 (and updates): Defines anti-money laundering norms, due diligence, identity checks, and customer risk profiling for financial institutions.",
+      "color": "purple",
+      "emphasis": "secondary",
+      "visual_weight": "medium"
+    }
+  ]
+}
+
+==== 2025-09-06 17:29:36.839887 ====
+NOTE: Used gemini-2.5-flash
+USER INPUT:
+NBFC – Scale-Based Regulation (SBR), 2023
+Governs capital norms, exposure limits, and governance based on an NBFC’s size and systemic importance. 
+Reserve Bank of India
+Non-Banking Financial Companies – Acceptance of Public Deposits, 2016
+Sets the rules and restrictions on how NBFCs can accept deposits, including interest caps, tenure, and regulatory safeguards. 
+Reserve Bank of India
+Residuary Non-Banking Companies Directions, 2016
+Lays down special rules for NBFCs that raise funds through unique schemes or subscriptions that don’t neatly fall into deposit classification. 
+Reserve Bank of India
+Know Your Customer (KYC) Direction, 2016 (and updates)
+Defines anti-money laundering norms, due diligence, identity checks, and customer risk profiling for financial institutions.
+. Why You Should Care
+Master Directions are your go-to strategic maps—essential for compliance in specific domains like NBFCs, foreign exchange, or AML.
+Master Circulars act as the annual regulatory compendium, ensuring you’re up-to-date on service standards, prudential norms, and sector-specific lenses.
+RAW OUTPUT:
+{
+  "title": "RBI's NBFC Regulatory Framework",
+  "layout": "hierarchy",
+  "visual_flow": "top_to_bottom",
+  "sections": [
+    {
+      "role": "main_concept",
+      "text": "RBI's NBFC Regulatory Framework: Guiding Compliance & Stability",
+      "color": "blue",
+      "emphasis": "primary",
+      "visual_weight": "heavy"
+    },
+    {
+      "role": "supporting_point",
+      "text": "Master Directions: Strategic maps for specific domains (NBFCs, AML, Foreign Exchange).",
+      "color": "green",
+      "emphasis": "secondary",
+      "visual_weight": "medium"
+    },
+    {
+      "role": "supporting_point",
+      "text": "Master Circulars: Annual regulatory compendium for service standards and prudential norms.",
+      "color": "green",
+      "emphasis": "secondary",
+      "visual_weight": "medium"
+    },
+    {
+      "role": "supporting_point",
+      "text": "NBFC – Scale-Based Regulation (SBR), 2023: Governs capital, exposure limits, and governance based on NBFC size and systemic importance.",
+      "color": "orange",
+      "emphasis": "secondary",
+      "visual_weight": "medium"
+    },
+    {
+      "role": "supporting_point",
+      "text": "NBFC – Acceptance of Public Deposits, 2016: Sets rules for deposit acceptance, including interest caps, tenure, and regulatory safeguards.",
+      "color": "orange",
+      "emphasis": "secondary",
+      "visual_weight": "medium"
+    },
+    {
+      "role": "supporting_point",
+      "text": "Residuary Non-Banking Companies Directions, 2016: Special rules for NBFCs raising funds via unique schemes not classified as deposits.",
+      "color": "orange",
+      "emphasis": "secondary",
+      "visual_weight": "medium"
+    },
+    {
+      "role": "supporting_point",
+      "text": "Know Your Customer (KYC) Direction, 2016: Defines anti-money laundering norms, due diligence, identity checks, and customer risk profiling.",
+      "color": "orange",
+      "emphasis": "secondary",
+      "visual_weight": "medium"
+    },
+    {
+      "role": "conclusion",
+      "text": "Why You Should Care: Essential for compliance and strategic understanding across the financial sector.",
+      "color": "red",
+      "emphasis": "primary",
+      "visual_weight": "heavy"
+    }
+  ]
+}
+
+==== 2025-09-06 17:38:22.266727 ====
+NOTE: Used gemini-2.5-flash
+USER INPUT:
+T
+o effectively perform his/her duties it is
+recommended that CISO should possess the
+following:
+(a) Management capabilities ;
+(b) Strategic planning abiliti
+es
+(c) Knowledg
+e of relevant legislative
+or
+reg
+ulatory requirements such as I
+T
+Act and ass
+ociated Rules
+and
+(d) Som
+e competence/exposure in the
+field of information securi
+ty;
+(e) Goo
+d communication and writi
+ng
+skil
+ls.
+CISO’s roles and responsibilities may
+include but not limited to the following:
+Strategic Planning
+Suggested responsibilities under this role
+are:
+1. Seek top management support and
+direction for implementing informa-
+tion security measures in the organi-
+zation.
+2. Identify information security goals
+and objectives consistent with or-
+ganization business need/objectives
+3. Define the scope and boundaries
+of
+the
+information security program.
+4. Understand legal and regulatory re-
+quirement.
+5. Define information security imple-
+mentation strategies.
+6. Estimate budget and resources re-
+quired.
+7. Plan and establish organization-wi
+de
+I
+nformation security Management
+System (ISMS) in accordance wi
+th
+I
+SO/IEC 27001 Standard, dir
+ections
+and
+advice of NCIIPC and other rele-
+vant security standards.
+RAW OUTPUT:
+{
+  "title": "CISO's Strategic Planning Framework",
+  "layout": "process_flow",
+  "visual_flow": "top_to_bottom",
+  "sections": [
+    {
+      "role": "main_concept",
+      "text": "CISO's Strategic Planning Responsibilities",
+      "color": "blue",
+      "emphasis": "primary",
+      "visual_weight": "heavy"
+    },
+    {
+      "role": "supporting_point",
+      "text": "Foundational CISO Capabilities: Management, Strategic Planning, Legal/Regulatory Knowledge, Information Security Competence, Communication Skills.",
+      "color": "green",
+      "emphasis": "secondary",
+      "visual_weight": "medium"
+    },
+    {
+      "role": "process_step",
+      "text": "1. Seek Top Management Support and Direction for InfoSec Implementation",
+      "color": "orange",
+      "emphasis": "secondary",
+      "visual_weight": "medium"
+    },
+    {
+      "role": "process_step",
+      "text": "2. Identify Information Security Goals and Objectives Aligned with Business Needs",
+      "color": "orange",
+      "emphasis": "secondary",
+      "visual_weight": "medium"
+    },
+    {
+      "role": "process_step",
+      "text": "3. Define the Scope and Boundaries of the Information Security Program",
+      "color": "orange",
+      "emphasis": "secondary",
+      "visual_weight": "medium"
+    },
+    {
+      "role": "process_step",
+      "text": "4. Understand Relevant Legal and Regulatory Requirements (e.g., IT Act)",
+      "color": "orange",
+      "emphasis": "secondary",
+      "visual_weight": "medium"
+    },
+    {
+      "role": "process_step",
+      "text": "5. Define Information Security Implementation Strategies",
+      "color": "orange",
+      "emphasis": "secondary",
+      "visual_weight": "medium"
+    },
+    {
+      "role": "process_step",
+      "text": "6. Estimate Required Budget and Resources",
+      "color": "orange",
+      "emphasis": "secondary",
+      "visual_weight": "medium"
+    },
+    {
+      "role": "process_step",
+      "text": "7. Plan & Establish Organization-wide Information Security Management System (ISMS) per ISO/IEC 27001",
+      "color": "orange",
+      "emphasis": "secondary",
+      "visual_weight": "medium"
+    }
+  ]
+}
+
+==== 2025-09-06 17:39:32.785239 ====
+NOTE: Used gemini-2.5-flash
+USER INPUT:
+On August 07, 2025, SEBI introduced a landmark circular that reshapes the inspection
+framework for intermediaries in the securities market.
+Present Scenario:
+Currently, brokers, depository participants (DPs), and clearing members are inspected
+separately by each Market Infrastructure Institution (MII) i.e., Stock Exchanges, Depositories,
+and Clearing Corporations.
+•
+This means a single entity holding multiple registrations could face three to four
+different inspections in the same year.
+•
+Such repeated inspections often cause operational disruptions, require significant
+manpower, and divert resources away from business activities.
+•
+It results in compliance fatigue for intermediaries, as they have to repeatedly prepare
+for audits, respond to similar queries, and manage overlapping compliance demands.
+The New Framework:
+To address this challenge, SEBI has now introduced the concept of Joint Annual Inspections.
+Instead of being inspected separately, an intermediary will undergo one consolidated
+inspection that covers all its business segments
+—
+stockbroking, depository par
+ticipant
+activities, and clearing operations.
+•
+Depositories will oversee DP operations.
+•
+Clearing Corporations will focus on clearing activities.
+•
+Stock Exchanges will evaluate broking operation
+RAW OUTPUT:
+{
+  "title": "SEBI's New Inspection Framework: Streamlining Intermediary Audits",
+  "layout": "comparison",
+  "visual_flow": "left_to_right",
+  "sections": [
+    {
+      "role": "main_concept",
+      "text": "SEBI introduces a landmark circular to reshape the inspection framework for securities market intermediaries (August 7, 2025).",
+      "color": "blue",
+      "emphasis": "primary",
+      "visual_weight": "heavy"
+    },
+    {
+      "role": "supporting_point",
+      "text": "PRESENT SCENARIO: Fragmented & Repetitive Inspections",
+      "color": "red",
+      "emphasis": "secondary",
+      "visual_weight": "medium"
+    },
+    {
+      "role": "supporting_point",
+      "text": "Brokers, DPs, & Clearing Members inspected separately by each Market Infrastructure Institution (MII).",
+      "color": "red",
+      "emphasis": "tertiary",
+      "visual_weight": "light"
+    },
+    {
+      "role": "supporting_point",
+      "text": "A single entity with multiple registrations could face 3-4 different inspections annually.",
+      "color": "red",
+      "emphasis": "tertiary",
+      "visual_weight": "light"
+    },
+    {
+      "role": "supporting_point",
+      "text": "Causes operational disruptions, significant manpower, diverted resources, and compliance fatigue.",
+      "color": "red",
+      "emphasis": "tertiary",
+      "visual_weight": "light"
+    },
+    {
+      "role": "supporting_point",
+      "text": "THE NEW FRAMEWORK: Joint Annual Inspections",
+      "color": "green",
+      "emphasis": "secondary",
+      "visual_weight": "medium"
+    },
+    {
+      "role": "supporting_point",
+      "text": "Intermediaries will undergo one consolidated inspection covering all business segments.",
+      "color": "green",
+      "emphasis": "tertiary",
+      "visual_weight": "light"
+    },
+    {
+      "role": "supporting_point",
+      "text": "Depositories oversee Depository Participant (DP) operations.",
+      "color": "green",
+      "emphasis": "tertiary",
+      "visual_weight": "light"
+    },
+    {
+      "role": "supporting_point",
+      "text": "Clearing Corporations focus on clearing activities.",
+      "color": "green",
+      "emphasis": "tertiary",
+      "visual_weight": "light"
+    },
+    {
+      "role": "supporting_point",
+      "text": "Stock Exchanges evaluate broking operations.",
+      "color": "green",
+      "emphasis": "tertiary",
+      "visual_weight": "light"
+    }
+  ]
+}
+
+==== 2025-09-06 17:42:57.357931 ====
+NOTE: Used gemini-2.5-flash
+USER INPUT:
+On August 07, 2025, SEBI introduced a landmark circular that reshapes the inspection
+framework for intermediaries in the securities market.
+Present Scenario:
+Currently, brokers, depository participants (DPs), and clearing members are inspected
+separately by each Market Infrastructure Institution (MII) i.e., Stock Exchanges, Depositories,
+and Clearing Corporations.
+•
+This means a single entity holding multiple registrations could face three to four
+different inspections in the same year.
+•
+Such repeated inspections often cause operational disruptions, require significant
+manpower, and divert resources away from business activities.
+•
+It results in compliance fatigue for intermediaries, as they have to repeatedly prepare
+for audits, respond to similar queries, and manage overlapping compliance demands.
+The New Framework:
+To address this challenge, SEBI has now introduced the concept of Joint Annual Inspections.
+Instead of being inspected separately, an intermediary will undergo one consolidated
+inspection that covers all its business segments
+—
+stockbroking, depository par
+ticipant
+activities, and clearing operations.
+•
+Depositories will oversee DP operations.
+•
+Clearing Corporations will focus on clearing activities.
+•
+Stock Exchanges will evaluate broking
+RAW OUTPUT:
+{
+  "title": "SEBI Reshapes Securities Market Inspection Framework",
+  "layout": "comparison",
+  "visual_flow": "left_to_right",
+  "sections": [
+    {
+      "role": "main_concept",
+      "text": "SEBI Introduces Landmark Joint Annual Inspections",
+      "color": "blue",
+      "emphasis": "primary",
+      "visual_weight": "heavy"
+    },
+    {
+      "role": "supporting_point",
+      "text": "Present Scenario: Fragmented Inspections",
+      "color": "orange",
+      "emphasis": "secondary",
+      "visual_weight": "medium"
+    },
+    {
+      "role": "supporting_point",
+      "text": "Intermediaries (brokers, DPs, clearing members) inspected separately by each MII (Exchanges, Depositories, Clearing Corporations).",
+      "color": "orange",
+      "emphasis": "tertiary",
+      "visual_weight": "light"
+    },
+    {
+      "role": "supporting_point",
+      "text": "Causes operational disruptions, significant manpower, resource diversion, and compliance fatigue due to repeated audits.",
+      "color": "orange",
+      "emphasis": "tertiary",
+      "visual_weight": "light"
+    },
+    {
+      "role": "supporting_point",
+      "text": "New Framework: Consolidated Joint Inspections",
+      "color": "green",
+      "emphasis": "secondary",
+      "visual_weight": "medium"
+    },
+    {
+      "role": "supporting_point",
+      "text": "A single, consolidated inspection covers all business segments (stockbroking, DP activities, clearing operations).",
+      "color": "green",
+      "emphasis": "tertiary",
+      "visual_weight": "light"
+    },
+    {
+      "role": "supporting_point",
+      "text": "Depositories oversee DP operations, Clearing Corporations focus on clearing activities, and Stock Exchanges evaluate broking.",
+      "color": "green",
+      "emphasis": "tertiary",
+      "visual_weight": "light"
+    }
+  ]
+}

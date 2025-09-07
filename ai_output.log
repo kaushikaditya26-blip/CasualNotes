@@ -1,0 +1,2017 @@
+
+==== 2025-09-06 18:08:33.540509 ====
+NOTE: Used gemini-2.5-flash
+USER INPUT:
+Entities with High Investor Grievances
+The top
+25
+entities registering the highest number of investor complaints and
+arbitration proceedings, computed as a proportion of their active client base,
+shall be brought under compulsory inspection.
+c.
+Entities Identified as High
+-
+Risk under RBS
+The top
+25
+entities classified as high
+-
+risk under the
+Risk
+-
+Based Supervision
+(RBS) framework
+shall undergo annual inspection, without exception.
+d.
+Other Market Intermediaries
+All entities not falling under the foregoing categories shall be subject to
+inspection
+at least once in every three years
+, unless exempted under specific
+conditions
+.
+e.
+Professional Clearing Members (PCMs)
+Notwithstanding the above, inspections of PCMs shall be conducted
+jointly by
+Clearing Corporations once in every two years.
+4.
+Special Inspections
+•
+MIIs retain the power to conduct special or limited inspections if red flags are
+raised through complaints, arbitration patterns, or regulator references.
+5.
+Lead MII Concept &
+Standard Operating Procedure (
+SOP
+)
+•
+A Lead MII will be appointed to initiate enforcement actions after inspections.
+•
+A
+Joint SOP
+covering inspection procedures and information
+-
+sharing will be
+finalized by
+November 1, 2025
+.
+6.
+Effective Date
+The newly introduced framework shall come into effect from
+December 1, 2025
+, and,
+upon its commencement, the earlier SEBI Circular dated June 30, 2017, prescribing the
+previous inspection policy, shall stand rescinded.
+SEBI Ease of Doing Business Framework.pdf
+The introduction of this circular marks a significant shift in SEBI’s supervisory approach,
+carrying both regulatory and market
+-
+wide implications:
+1.
+Streamlined Compliance Architecture
+By consolidating multiple inspections into a single coordinated process, the framework
+minimizes duplication, reduces compliance costs, and enables intermediaries to focus
+on operational efficiency rather than repetitive regulatory engagements.
+2.
+Risk
+-
+Responsive Supervision
+The adoption of a risk
+-
+based inspection model ensures that entities with persistent
+compliance breaches, heightened investor grievances, or elevated systemic risk are
+prioritized. This targeted oversight enhances regulatory effectiveness and optimizes
+supe
+rvisory resources.
+3.
+Investor
+-
+Centric Safeguards
+The uniform inspection mechanism strengthens market discipline by enabling the
+timely detection of malpractices, thereby reinforcing investor confidence and upholding
+the integrity of the securities market.
+RAW OUTPUT:
+{
+  "title": "SEBI's New Risk-Based Inspection Framework",
+  "layout": "concept_map",
+  "visual_flow": "center_radial",
+  "sections": [
+    {
+      "role": "main_concept",
+      "text": "SEBI's New Risk-Based Inspection Framework",
+      "color": "blue",
+      "emphasis": "primary",
+      "visual_weight": "heavy"
+    },
+    {
+      "role": "supporting_point",
+      "text": "Targeted Inspections: Annual for Top 25 (High Grievances & High-Risk RBS). PCMs every 2 years (Jointly by Clearing Corps).",
+      "color": "green",
+      "emphasis": "secondary",
+      "visual_weight": "medium"
+    },
+    {
+      "role": "supporting_point",
+      "text": "General & Special Inspections: Other intermediaries every 3 years. Special inspections for red flags (complaints, arbitration).",
+      "color": "orange",
+      "emphasis": "secondary",
+      "visual_weight": "medium"
+    },
+    {
+      "role": "supporting_point",
+      "text": "Operational Enhancements: Lead MII for enforcement actions. Joint SOP for procedures & info-sharing (finalized by Nov 1, 2025).",
+      "color": "purple",
+      "emphasis": "secondary",
+      "visual_weight": "medium"
+    },
+    {
+      "role": "conclusion",
+      "text": "Key Benefits: Streamlined Compliance, Risk-Responsive Supervision, Investor-Centric Safeguards. Effective Date: December 1, 2025 (rescinding old circular).",
+      "color": "teal",
+      "emphasis": "secondary",
+      "visual_weight": "medium"
+    }
+  ]
+}
+
+==== 2025-09-06 18:11:19.190116 ====
+NOTE: Used gemini-2.5-pro
+USER INPUT:
+Entities with High Investor Grievances
+The top
+25
+entities registering the highest number of investor complaints and
+arbitration proceedings, computed as a proportion of their active client base,
+shall be brought under compulsory inspection.
+c.
+Entities Identified as High
+-
+Risk under RBS
+The top
+25
+entities classified as high
+-
+risk under the
+Risk
+-
+Based Supervision
+(RBS) framework
+shall undergo annual inspection, without exception.
+d.
+Other Market Intermediaries
+All entities not falling under the foregoing categories shall be subject to
+inspection
+at least once in every three years
+, unless exempted under specific
+conditions
+.
+e.
+Professional Clearing Members (PCMs)
+Notwithstanding the above, inspections of PCMs shall be conducted
+jointly by
+Clearing Corporations once in every two years.
+4.
+Special Inspections
+•
+MIIs retain the power to conduct special or limited inspections if red flags are
+raised through complaints, arbitration patterns, or regulator references.
+5.
+Lead MII Concept &
+Standard Operating Procedure (
+SOP
+)
+•
+A Lead MII will be appointed to initiate enforcement actions after inspections.
+•
+A
+Joint SOP
+covering inspection procedures and information
+-
+sharing will be
+finalized by
+November 1, 2025
+.
+6.
+Effective Date
+The newly introduced framework shall come into effect from
+December 1, 2025
+, and,
+upon its commencement, the earlier SEBI Circular dated June 30, 2017, prescribing the
+previous inspection policy, shall stand rescinded.
+SEBI Ease of Doing Business Framework.pdf
+The introduction of this circular marks a significant shift in SEBI’s supervisory approach,
+carrying both regulatory and market
+-
+wide implications:
+1.
+Streamlined Compliance Architecture
+By consolidating multiple inspections into a single coordinated process, the framework
+minimizes duplication, reduces compliance costs, and enables intermediaries to focus
+on operational efficiency rather than repetitive regulatory engagements.
+2.
+Risk
+-
+Responsive Supervision
+The adoption of a risk
+-
+based inspection model ensures that entities with persistent
+compliance breaches, heightened investor grievances, or elevated systemic risk are
+prioritized. This targeted oversight enhances regulatory effectiveness and optimizes
+supe
+rvisory resources.
+3.
+Investor
+-
+Centric Safeguards
+The uniform inspection mechanism strengthens market discipline by enabling the
+timely detection of malpractices, thereby reinforcing investor confidence and upholding
+the integrity of the securities market.
+4.
+RAW OUTPUT:
+{
+  "title": "SEBI's New Risk-Based Inspection Framework",
+  "layout": "hierarchy",
+  "visual_flow": "top_to_bottom",
+  "sections": [
+    {
+      "role": "main_concept",
+      "text": "A new risk-based framework to streamline and prioritize the inspection of market intermediaries, effective December 1, 2025.",
+      "color": "blue",
+      "emphasis": "primary",
+      "visual_weight": "heavy"
+    },
+    {
+      "role": "supporting_point",
+      "text": "Highest Priority: Annual Compulsory Inspection for the top 25 entities with high investor grievances or classified as high-risk under the Risk-Based Supervision (RBS) framework.",
+      "color": "red",
+      "emphasis": "secondary",
+      "visual_weight": "medium"
+    },
+    {
+      "role": "supporting_point",
+      "text": "Specialized Entities: Biennial Joint Inspection for all Professional Clearing Members (PCMs), conducted by Clearing Corporations.",
+      "color": "orange",
+      "emphasis": "secondary",
+      "visual_weight": "medium"
+    },
+    {
+      "role": "supporting_point",
+      "text": "Standard Oversight: Triennial Inspection for all other market intermediaries not falling into higher-priority categories.",
+      "color": "green",
+      "emphasis": "secondary",
+      "visual_weight": "medium"
+    },
+    {
+      "role": "supporting_point",
+      "text": "Contingency: Special inspections can be initiated at any time if red flags are raised through complaints, arbitration patterns, or regulator references.",
+      "color": "purple",
+      "emphasis": "tertiary",
+      "visual_weight": "light"
+    },
+    {
+      "role": "conclusion",
+      "text": "Intended Outcomes: A streamlined compliance architecture with risk-responsive supervision that strengthens investor-centric safeguards.",
+      "color": "teal",
+      "emphasis": "primary",
+      "visual_weight": "medium"
+    }
+  ]
+}
+
+==== 2025-09-06 18:14:26.338313 ====
+NOTE: Used gemini-2.5-flash
+USER INPUT:
+Entities with High Investor Grievances
+The top
+25
+entities registering the highest number of investor complaints and
+arbitration proceedings, computed as a proportion of their active client base,
+shall be brought under compulsory inspection.
+c.
+Entities Identified as High
+-
+Risk under RBS
+The top
+25
+entities classified as high
+-
+risk under the
+Risk
+-
+Based Supervision
+(RBS) framework
+shall undergo annual inspection, without exception.
+d.
+Other Market Intermediaries
+All entities not falling under the foregoing categories shall be subject to
+inspection
+at least once in every three years
+, unless exempted under specific
+conditions
+.
+e.
+Professional Clearing Members (PCMs)
+Notwithstanding the above, inspections of PCMs shall be conducted
+jointly by
+Clearing Corporations once in every two years.
+4.
+Special Inspections
+•
+MIIs retain the power to conduct special or limited inspections if red flags are
+raised through complaints, arbitration patterns, or regulator references.
+5.
+Lead MII Concept &
+Standard Operating Procedure (
+SOP
+)
+•
+A Lead MII will be appointed to initiate enforcement actions after inspections.
+•
+A
+Joint SOP
+covering inspection procedures and information
+-
+sharing will be
+finalized by
+November 1, 2025
+.
+6.
+Effective Date
+The newly introduced framework shall come into effect from
+December 1, 2025
+, and,
+upon its commencement, the earlier SEBI Circular dated June 30, 2017, prescribing the
+previous inspection policy, shall stand rescinded.
+SEBI Ease of Doing Business Framework.pdf
+The introduction of this circular marks a significant shift in SEBI’s supervisory approach,
+carrying both regulatory and market
+-
+wide implications:
+1.
+Streamlined Compliance Architecture
+By consolidating multiple inspections into a single coordinated process, the framework
+minimizes duplication, reduces compliance costs, and enables intermediaries to focus
+on operational efficiency rather than repetitive regulatory engagements.
+2.
+Risk
+-
+Responsive Supervision
+The adoption of a risk
+-
+based inspection model ensures that entities with persistent
+compliance breaches, heightened investor grievances, or elevated systemic risk are
+prioritized. This targeted oversight enhances regulatory effectiveness and optimizes
+supe
+rvisory resources.
+3.
+Investor
+-
+Centric Safeguards
+The uniform inspection mechanism strengthens market discipline by enabling the
+timely detection of malpractices, thereby reinforcing investor confidence and upholding
+the integrity of the securities market.
+RAW OUTPUT:
+{
+  "title": "SEBI's Enhanced Inspection Framework: A Risk-Based Approach",
+  "layout": "concept_map",
+  "visual_flow": "center_radial",
+  "sections": [
+    {
+      "role": "main_concept",
+      "text": "SEBI's New Inspection Framework",
+      "color": "blue",
+      "emphasis": "primary",
+      "visual_weight": "heavy"
+    },
+    {
+      "role": "supporting_point",
+      "text": "Prioritized Regular Inspections: Top 25 entities (high investor grievances or high-risk RBS) face annual inspection. Other intermediaries: every 3 years. PCMs: every 2 years, jointly by Clearing Corps.",
+      "color": "green",
+      "emphasis": "secondary",
+      "visual_weight": "medium"
+    },
+    {
+      "role": "supporting_point",
+      "text": "Special Inspections Provision: MIIs can conduct special/limited inspections when red flags are raised via complaints, arbitration patterns, or regulator references.",
+      "color": "orange",
+      "emphasis": "secondary",
+      "visual_weight": "medium"
+    },
+    {
+      "role": "supporting_point",
+      "text": "Streamlined Enforcement & SOP: Lead MII appointed for enforcement actions. Joint SOP for inspection procedures and info-sharing to be finalized by Nov 1, 2025. Framework effective from Dec 1, 2025.",
+      "color": "purple",
+      "emphasis": "secondary",
+      "visual_weight": "medium"
+    },
+    {
+      "role": "supporting_point",
+      "text": "Key Strategic Implications: The framework offers streamlined compliance, risk-responsive supervision, and investor-centric safeguards, enhancing market discipline and integrity.",
+      "color": "red",
+      "emphasis": "secondary",
+      "visual_weight": "medium"
+    }
+  ]
+}
+
+==== 2025-09-06 18:22:32.035250 ====
+NOTE: Used gemini-2.5-flash
+USER INPUT:
+CTCL mismatches, or any comparable high
+-
+risk compliance defaults, shall
+mandatorily be subjected to inspection, irrespective of their last inspection
+cycle.
+b.
+Entities with High Investor Grievances
+The top
+25
+entities registering the highest number of investor complaints and
+arbitration proceedings, computed as a proportion of their active client base,
+shall be brought under compulsory inspection.
+c.
+Entities Identified as High
+-
+Risk under RBS
+The top
+25
+entities classified as high
+-
+risk under the
+Risk
+-
+Based Supervision
+(RBS) framework
+shall undergo annual inspection, without exception.
+d.
+Other Market Intermediaries
+All entities not falling under the foregoing categories shall be subject to
+inspection
+at least once in every three years
+, unless exempted under specific
+conditions
+.
+e.
+Professional Clearing Members (PCMs)
+Notwithstanding the above, inspections of PCMs shall be conducted
+jointly by
+Clearing Corporations once in every two years.
+4.
+Special Inspections
+•
+MIIs retain the power to conduct special or limited inspections if red flags are
+raised through complaints, arbitration patterns, or regulator references.
+5.
+Lead MII Concept &
+Standard Operating Procedure (
+SOP
+)
+•
+A Lead MII will be appointed to initiate enforcement actions after inspections.
+•
+A
+Joint SOP
+covering inspection procedures and information
+-
+sharing will be
+finalized by
+November 1, 2025
+.
+6.
+Effective Date
+The newly introduced framework shall come into effect from
+December 1, 2025
+, and,
+upon its commencement, the earlier SEBI Circular dated June 30, 2017, prescribing the
+previous inspection policy, shall stand rescinded.
+SEBI Ease of Doing Business Framework.pdf
+The introduction of this circular marks a significant shift in SEBI’s supervisory approach,
+carrying both regulatory and market
+-
+wide implications:
+1.
+Streamlined Compliance Architecture
+By consolidating multiple inspections into a single coordinated process, the framework
+minimizes duplication, reduces compliance costs, and enables intermediaries to focus
+on operational efficiency rather than repetitive regulatory engagements.
+2.
+Risk
+-
+Responsive Supervision
+The adoption of a risk
+-
+based inspection model ensures that entities with persistent
+compliance breaches, heightened investor grievances, or elevated systemic risk are
+prioritized. This targeted oversight enhances regulatory effectiveness and optimizes
+supe
+rvisory resources.
+3.
+Investor
+-
+Centric Safeguards
+The uniform inspection mechanism strengthens m
+RAW OUTPUT:
+{
+  "title": "SEBI's Enhanced Inspection Framework: A New Supervisory Approach",
+  "layout": "hierarchy",
+  "visual_flow": "top_to_bottom",
+  "sections": [
+    {
+      "role": "main_concept",
+      "text": "SEBI's Enhanced Inspection Policy: A New Supervisory Approach for Market Intermediaries",
+      "color": "blue",
+      "emphasis": "primary",
+      "visual_weight": "heavy"
+    },
+    {
+      "role": "supporting_point",
+      "text": "Core Inspection Criteria & Schedules",
+      "color": "green",
+      "emphasis": "secondary",
+      "visual_weight": "medium"
+    },
+    {
+      "role": "supporting_point",
+      "text": "Mandatory: CTCL mismatches / High-risk compliance defaults (Irrespective of last cycle)",
+      "color": "green",
+      "emphasis": "tertiary",
+      "visual_weight": "light"
+    },
+    {
+      "role": "supporting_point",
+      "text": "Compulsory: Top 25 entities by investor complaints & arbitration (Proportionate to active clients)",
+      "color": "green",
+      "emphasis": "tertiary",
+      "visual_weight": "light"
+    },
+    {
+      "role": "supporting_point",
+      "text": "Annual: Top 25 entities classified as high-risk under RBS framework",
+      "color": "green",
+      "emphasis": "tertiary",
+      "visual_weight": "light"
+    },
+    {
+      "role": "supporting_point",
+      "text": "Periodic: Other intermediaries at least once every three years (Unless exempted)",
+      "color": "green",
+      "emphasis": "tertiary",
+      "visual_weight": "light"
+    },
+    {
+      "role": "supporting_point",
+      "text": "PCMs: Jointly by Clearing Corporations once every two years",
+      "color": "green",
+      "emphasis": "tertiary",
+      "visual_weight": "light"
+    },
+    {
+      "role": "supporting_point",
+      "text": "Special Inspections: MIIs conduct based on red flags (complaints, arbitration, regulator references)",
+      "color": "green",
+      "emphasis": "tertiary",
+      "visual_weight": "light"
+    },
+    {
+      "role": "supporting_point",
+      "text": "Operationalizing the Framework",
+      "color": "orange",
+      "emphasis": "secondary",
+      "visual_weight": "medium"
+    },
+    {
+      "role": "supporting_point",
+      "text": "Lead MII & Joint SOP: Lead MII for enforcement; Joint SOP for procedures & info-sharing by Nov 1, 2025",
+      "color": "orange",
+      "emphasis": "tertiary",
+      "visual_weight": "light"
+    },
+    {
+      "role": "supporting_point",
+      "text": "Effective Date: December 1, 2025 (Rescinds previous SEBI circular of June 30, 2017)",
+      "color": "orange",
+      "emphasis": "tertiary",
+      "visual_weight": "light"
+    },
+    {
+      "role": "conclusion",
+      "text": "Strategic Implications & Benefits",
+      "color": "purple",
+      "emphasis": "secondary",
+      "visual_weight": "medium"
+    },
+    {
+      "role": "supporting_point",
+      "text": "Streamlined Compliance: Consolidates inspections, reduces duplication & costs, enhances operational efficiency",
+      "color": "purple",
+      "emphasis": "tertiary",
+      "visual_weight": "light"
+    },
+    {
+      "role": "supporting_point",
+      "text": "Risk-Responsive Supervision: Prioritizes high-risk entities; targeted oversight, optimized supervisory resources",
+      "color": "purple",
+      "emphasis": "tertiary",
+      "visual_weight": "light"
+    },
+    {
+      "role": "supporting_point",
+      "text": "Investor-Centric Safeguards: Strengthens uniform inspection mechanism for investor protection",
+      "color": "purple",
+      "emphasis": "tertiary",
+      "visual_weight": "light"
+    }
+  ]
+}
+
+==== 2025-09-06 18:27:54.476808 ====
+NOTE: Used gemini-2.5-flash
+USER INPUT:
+CTCL mismatches, or any comparable high
+-
+risk compliance defaults, shall
+mandatorily be subjected to inspection, irrespective of their last inspection
+cycle.
+b.
+Entities with High Investor Grievances
+The top
+25
+entities registering the highest number of investor complaints and
+arbitration proceedings, computed as a proportion of their active client base,
+shall be brought under compulsory inspection.
+c.
+Entities Identified as High
+-
+Risk under RBS
+The top
+25
+entities classified as high
+-
+risk under the
+Risk
+-
+Based Supervision
+(RBS) framework
+shall undergo annual inspection, without exception.
+d.
+Other Market Intermediaries
+All entities not falling under the foregoing categories shall be subject to
+inspection
+at least once in every three years
+, unless exempted under specific
+conditions
+
+Professional Clearing Members (PCMs)
+Notwithstanding the above, inspections of PCMs shall be conducted
+jointly by
+Clearing Corporations once in every two years.
+4.
+Special Inspections
+MIIs retain the power to conduct special or limited inspections if red flags are
+raised through complaints, arbitration patterns, or regulator references.
+5.
+Lead MII Concept &
+Standard Operating Procedure (
+SOP
+)
+A Lead MII will be appointed to initiate enforcement actions after inspections.
+
+Joint SOP
+covering inspection procedures and information
+RAW OUTPUT:
+{
+  "title": "Market Intermediary Inspection Framework",
+  "layout": "hierarchy",
+  "visual_flow": "top_to_bottom",
+  "sections": [
+    {
+      "role": "main_concept",
+      "text": "Market Intermediary Inspection Framework",
+      "color": "blue",
+      "emphasis": "primary",
+      "visual_weight": "heavy"
+    },
+    {
+      "role": "supporting_point",
+      "text": "Mandatory Inspection Triggers",
+      "color": "green",
+      "emphasis": "secondary",
+      "visual_weight": "medium"
+    },
+    {
+      "role": "supporting_point",
+      "text": "Special Inspections: For Red Flags & Complaints",
+      "color": "orange",
+      "emphasis": "secondary",
+      "visual_weight": "medium"
+    },
+    {
+      "role": "supporting_point",
+      "text": "Enforcement & Standardization: Lead MII & Joint SOP",
+      "color": "purple",
+      "emphasis": "secondary",
+      "visual_weight": "medium"
+    },
+    {
+      "role": "supporting_point",
+      "text": "CTCL Mismatches / High-Risk Defaults: Always Inspected",
+      "color": "teal",
+      "emphasis": "tertiary",
+      "visual_weight": "light"
+    },
+    {
+      "role": "supporting_point",
+      "text": "Top 25 Entities: High Investor Grievances (Proportional)",
+      "color": "teal",
+      "emphasis": "tertiary",
+      "visual_weight": "light"
+    },
+    {
+      "role": "supporting_point",
+      "text": "Top 25 Entities: High-Risk under RBS (Annual Inspection)",
+      "color": "teal",
+      "emphasis": "tertiary",
+      "visual_weight": "light"
+    },
+    {
+      "role": "supporting_point",
+      "text": "Other Intermediaries: Minimum Once Every 3 Years",
+      "color": "teal",
+      "emphasis": "tertiary",
+      "visual_weight": "light"
+    },
+    {
+      "role": "supporting_point",
+      "text": "Professional Clearing Members (PCMs): Jointly, Every 2 Years",
+      "color": "teal",
+      "emphasis": "tertiary",
+      "visual_weight": "light"
+    }
+  ]
+}
+
+==== 2025-09-06 18:34:05.030293 ====
+NOTE: Used gemini-2.5-flash
+USER INPUT:
+CTCL mismatches, or any comparable high
+-
+risk compliance defaults, shall
+mandatorily be subjected to inspection, irrespective of their last inspection
+cycle.
+b.
+Entities with High Investor Grievances
+The top
+25
+entities registering the highest number of investor complaints and
+arbitration proceedings, computed as a proportion of their active client base,
+shall be brought under compulsory inspection.
+c.
+Entities Identified as High
+-
+Risk under RBS
+The top
+25
+entities classified as high
+-
+risk under the
+Risk
+-
+Based Supervision
+(RBS) framework
+shall undergo annual inspection, without exception.
+d.
+Other Market Intermediaries
+All entities not falling under the foregoing categories shall be subject to
+inspection
+at least once in every three years
+, unless exempted under specific
+conditions
+.
+e.
+Professional Clearing Members (PCMs)
+Notwithstanding the above, inspections of PCMs shall be conducted
+jointly by
+Clearing Corporations once in every two years.
+4.
+Special Inspections
+•
+MIIs retain the power to conduct special or limited inspections if red flags are
+raised through complaints, arbitration patterns, or regulator references.
+5.
+Lead MII Concept &
+Standard Operating Procedure (
+SOP
+)
+
+A Lead MII will be appointed to initiate enforcement actions after inspections.
+RAW OUTPUT:
+{
+  "title": "Mandatory Inspection Criteria for Market Intermediaries",
+  "layout": "hierarchy",
+  "visual_flow": "top_to_bottom",
+  "sections": [
+    {
+      "role": "main_concept",
+      "text": "Mandatory Inspection Framework",
+      "color": "blue",
+      "emphasis": "primary",
+      "visual_weight": "heavy"
+    },
+    {
+      "role": "supporting_point",
+      "text": "CTCL Mismatches & High-Risk Compliance Defaults (Mandatory, Irrespective of Last Cycle)",
+      "color": "green",
+      "emphasis": "secondary",
+      "visual_weight": "medium"
+    },
+    {
+      "role": "supporting_point",
+      "text": "High Investor Grievances (Top 25 Entities Proportional to Client Base)",
+      "color": "green",
+      "emphasis": "secondary",
+      "visual_weight": "medium"
+    },
+    {
+      "role": "supporting_point",
+      "text": "High-Risk Entities under RBS (Top 25 Entities, Annual Inspection)",
+      "color": "green",
+      "emphasis": "secondary",
+      "visual_weight": "medium"
+    },
+    {
+      "role": "supporting_point",
+      "text": "Other Market Intermediaries (At Least Once Every Three Years, Unless Exempted)",
+      "color": "orange",
+      "emphasis": "secondary",
+      "visual_weight": "medium"
+    },
+    {
+      "role": "supporting_point",
+      "text": "Professional Clearing Members (PCMs) (Jointly by Clearing Corporations, Every Two Years)",
+      "color": "orange",
+      "emphasis": "secondary",
+      "visual_weight": "medium"
+    },
+    {
+      "role": "supporting_point",
+      "text": "Special Inspections (MIIs Can Conduct Based on Red Flags, Complaints, Arbitration)",
+      "color": "red",
+      "emphasis": "secondary",
+      "visual_weight": "medium"
+    },
+    {
+      "role": "conclusion",
+      "text": "Enforcement: Lead MII Concept (Lead MII Appointed for Enforcement Actions Post-Inspection)",
+      "color": "purple",
+      "emphasis": "secondary",
+      "visual_weight": "medium"
+    }
+  ]
+}
+
+==== 2025-09-06 18:43:53.738379 ====
+NOTE: Used gemini-2.5-flash
+USER INPUT:
+Standard Operating Procedure (SOP) A Lead MII will be appointed to initiate enforcement actions after inspections.
+RAW OUTPUT:
+{
+  "title": "SOP: Enforcement Action Initiation",
+  "layout": "process_flow",
+  "visual_flow": "left_to_right",
+  "sections": [
+    {
+      "role": "main_concept",
+      "text": "Standard Operating Procedure (SOP)",
+      "color": "blue",
+      "emphasis": "primary",
+      "visual_weight": "heavy"
+    },
+    {
+      "role": "process_step",
+      "text": "1. Inspections Conclude",
+      "color": "green",
+      "emphasis": "secondary",
+      "visual_weight": "medium"
+    },
+    {
+      "role": "process_step",
+      "text": "2. Lead MII Appointed",
+      "color": "orange",
+      "emphasis": "secondary",
+      "visual_weight": "medium"
+    },
+    {
+      "role": "process_step",
+      "text": "3. Initiate Enforcement Actions",
+      "color": "red",
+      "emphasis": "secondary",
+      "visual_weight": "medium"
+    }
+  ]
+}
+
+==== 2025-09-06 18:45:48.947892 ====
+NOTE: Used gemini-2.5-flash
+USER INPUT:
+CTCL mismatches, or any comparable high
+-
+risk compliance defaults, shall
+mandatorily be subjected to inspection, irrespective of their last inspection
+cycle.
+b.
+Entities with High Investor Grievances
+The top
+25
+entities registering the highest number of investor complaints and
+arbitration proceedings, computed as a proportion of their active client base,
+shall be brought under compulsory inspection.
+c.
+Entities Identified as High
+-
+Risk under RBS
+The top
+25
+entities classified as high
+-
+risk under the
+Risk
+-
+Based Supervision
+(RBS) framework
+shall undergo annual inspection, without exception.
+d.
+Other Market Intermediaries
+All entities not falling under the foregoing categories shall be subject to
+inspection
+at least once in every three years
+, unless exempted under specific
+conditions
+.
+e.
+Professional Clearing Members (PCMs)
+Notwithstanding the above, inspections of PCMs shall be conducted
+jointly by
+Clearing Corporations once in every two years.
+4.
+Special Inspections
+•
+MIIs retain the power to conduct special or limited inspections if red flags are
+raised through complaints, arbitration patterns, or regulator references.
+5.
+Lead MII Concept &
+Standard Operating Procedure (
+SOP
+)
+•
+A Lead MII will be appointed to initiate enforcement actions after inspections.
+RAW OUTPUT:
+{
+  "title": "Market Intermediary Inspection Framework",
+  "layout": "hierarchy",
+  "visual_flow": "top_to_bottom",
+  "sections": [
+    {
+      "role": "main_concept",
+      "text": "Comprehensive Framework for Market Intermediary Inspections",
+      "color": "blue",
+      "emphasis": "primary",
+      "visual_weight": "heavy"
+    },
+    {
+      "role": "supporting_point",
+      "text": "Mandatory Inspection Criteria",
+      "color": "orange",
+      "emphasis": "secondary",
+      "visual_weight": "medium"
+    },
+    {
+      "role": "supporting_point",
+      "text": "High-Risk Compliance Defaults (CTCL Mismatches)",
+      "color": "green",
+      "emphasis": "tertiary",
+      "visual_weight": "light"
+    },
+    {
+      "role": "supporting_point",
+      "text": "Top 25 Entities: High Investor Grievances",
+      "color": "green",
+      "emphasis": "tertiary",
+      "visual_weight": "light"
+    },
+    {
+      "role": "supporting_point",
+      "text": "Top 25 Entities: High-Risk under RBS Framework",
+      "color": "green",
+      "emphasis": "tertiary",
+      "visual_weight": "light"
+    },
+    {
+      "role": "supporting_point",
+      "text": "Other Market Intermediaries: At least once every 3 years",
+      "color": "green",
+      "emphasis": "tertiary",
+      "visual_weight": "light"
+    },
+    {
+      "role": "supporting_point",
+      "text": "Professional Clearing Members (PCMs): Jointly every 2 years",
+      "color": "green",
+      "emphasis": "tertiary",
+      "visual_weight": "light"
+    },
+    {
+      "role": "supporting_point",
+      "text": "Special Inspections",
+      "color": "purple",
+      "emphasis": "secondary",
+      "visual_weight": "medium"
+    },
+    {
+      "role": "supporting_point",
+      "text": "MIIs conduct for red flags (complaints, arbitration, regulator references)",
+      "color": "teal",
+      "emphasis": "tertiary",
+      "visual_weight": "light"
+    },
+    {
+      "role": "conclusion",
+      "text": "Post-Inspection Enforcement & SOP",
+      "color": "red",
+      "emphasis": "secondary",
+      "visual_weight": "medium"
+    },
+    {
+      "role": "supporting_point",
+      "text": "Lead MII appointed to initiate enforcement actions post-inspection, following SOP.",
+      "color": "teal",
+      "emphasis": "tertiary",
+      "visual_weight": "light"
+    }
+  ]
+}
+
+==== 2025-09-06 18:49:07.545422 ====
+NOTE: Used gemini-2.5-flash
+USER INPUT:
+CTCL mismatches, or any comparable high
+-
+risk compliance defaults, shall
+mandatorily be subjected to inspection, irrespective of their last inspection
+cycle.
+b.
+Entities with High Investor Grievances
+The top
+25
+entities registering the highest number of investor complaints and
+arbitration proceedings, computed as a proportion of their active client base,
+shall be brought under compulsory inspection.
+c.
+Entities Identified as High
+-
+Risk under RBS
+The top
+25
+entities classified as high
+-
+risk under the
+Risk
+-
+Based Supervision
+(RBS) framework
+shall undergo annual inspection, without exception.
+d.
+Other Market Intermediaries
+All entities not falling under the foregoing categories shall be subject to
+inspection
+at least once in every three years
+, unless exempted under specific
+conditions
+.
+e.
+Professional Clearing Members (PCMs)
+Notwithstanding the above, inspections of PCMs shall be conducted
+jointly by
+Clearing Corporations once in every two years.
+4.
+Special Inspections
+•
+MIIs retain the power to conduct special or limited inspections if red flags are
+raised through complaints, arbitration patterns, or regulator references.
+5.
+Lead MII Concept &
+Standard Operating Procedure (
+SOP
+)
+•
+A Lead MII will be appointed to initiate enforcement actions after inspections.
+RAW OUTPUT:
+{
+  "title": "Market Intermediary Inspection Framework",
+  "layout": "hierarchy",
+  "visual_flow": "top_to_bottom",
+  "sections": [
+    {
+      "role": "main_concept",
+      "text": "Market Intermediary Inspection Framework",
+      "color": "blue",
+      "emphasis": "primary",
+      "visual_weight": "heavy"
+    },
+    {
+      "role": "supporting_point",
+      "text": "Mandatory Inspections: Criteria & Frequency",
+      "color": "green",
+      "emphasis": "secondary",
+      "visual_weight": "medium"
+    },
+    {
+      "role": "supporting_point",
+      "text": "CTCL Mismatches / High-Risk Compliance Defaults",
+      "color": "teal",
+      "emphasis": "tertiary",
+      "visual_weight": "light"
+    },
+    {
+      "role": "supporting_point",
+      "text": "High Investor Grievances (Top 25 Entities)",
+      "color": "teal",
+      "emphasis": "tertiary",
+      "visual_weight": "light"
+    },
+    {
+      "role": "supporting_point",
+      "text": "High-Risk Entities Under RBS (Top 25 Entities)",
+      "color": "teal",
+      "emphasis": "tertiary",
+      "visual_weight": "light"
+    },
+    {
+      "role": "supporting_point",
+      "text": "Other Market Intermediaries (Once Every Three Years)",
+      "color": "teal",
+      "emphasis": "tertiary",
+      "visual_weight": "light"
+    },
+    {
+      "role": "supporting_point",
+      "text": "Professional Clearing Members (PCMs) (Once Every Two Years)",
+      "color": "teal",
+      "emphasis": "tertiary",
+      "visual_weight": "light"
+    },
+    {
+      "role": "supporting_point",
+      "text": "Special Inspections: Red Flag Response",
+      "color": "orange",
+      "emphasis": "secondary",
+      "visual_weight": "medium"
+    },
+    {
+      "role": "supporting_point",
+      "text": "Lead MII Concept & SOP: Enforcement Actions",
+      "color": "purple",
+      "emphasis": "secondary",
+      "visual_weight": "medium"
+    }
+  ]
+}
+
+==== 2025-09-06 18:52:26.057979 ====
+NOTE: Used gemini-2.5-flash
+USER INPUT:
+CTCL mismatches, or any comparable high
+-
+risk compliance defaults, shall
+mandatorily be subjected to inspection, irrespective of their last inspection
+cycle.
+b.
+Entities with High Investor Grievances
+The top
+25
+entities registering the highest number of investor complaints and
+arbitration proceedings, computed as a proportion of their active client base,
+shall be brought under compulsory inspection.
+c.
+Entities Identified as High
+-
+Risk under RBS
+The top
+25
+entities classified as high
+-
+risk under the
+Risk
+-
+Based Supervision
+(RBS) framework
+shall undergo annual inspection, without exception.
+d.
+Other Market Intermediaries
+All entities not falling under the foregoing categories shall be subject to
+inspection
+at least once in every three years
+, unless exempted under specific
+conditions
+.
+e.
+Professional Clearing Members (PCMs)
+Notwithstanding the above, inspections of PCMs shall be conducted
+jointly by
+Clearing Corporations once in every two years.
+4.
+Special Inspections
+•
+MIIs retain the power to conduct special or limited inspections if red flags are
+raised through complaints, arbitration patterns, or regulator references.
+5.
+Lead MII Concept &
+Standard Operating Procedure (
+SOP
+)
+•
+A Lead MII will be appointed to initiate enforcement actions after inspections.
+RAW OUTPUT:
+{
+  "title": "Market Intermediary Inspection Framework",
+  "layout": "hierarchy",
+  "visual_flow": "top_to_bottom",
+  "sections": [
+    {
+      "role": "main_concept",
+      "text": "Market Intermediary Inspection Framework",
+      "color": "blue",
+      "emphasis": "primary",
+      "visual_weight": "heavy"
+    },
+    {
+      "role": "supporting_point",
+      "text": "Mandatory Inspection Triggers",
+      "color": "green",
+      "emphasis": "secondary",
+      "visual_weight": "medium"
+    },
+    {
+      "role": "supporting_point",
+      "text": "CTCL Mismatches & High-Risk Defaults: Mandated inspection regardless of last cycle.",
+      "color": "teal",
+      "emphasis": "tertiary",
+      "visual_weight": "light"
+    },
+    {
+      "role": "supporting_point",
+      "text": "High Investor Grievances: Top 25 entities (proportional to active clients) with most complaints/arbitration are inspected.",
+      "color": "teal",
+      "emphasis": "tertiary",
+      "visual_weight": "light"
+    },
+    {
+      "role": "supporting_point",
+      "text": "High-Risk under RBS: Top 25 entities classified as high-risk under Risk-Based Supervision undergo annual inspection.",
+      "color": "teal",
+      "emphasis": "tertiary",
+      "visual_weight": "light"
+    },
+    {
+      "role": "supporting_point",
+      "text": "Other Market Intermediaries: Inspected at least once every three years, unless exempted.",
+      "color": "teal",
+      "emphasis": "tertiary",
+      "visual_weight": "light"
+    },
+    {
+      "role": "supporting_point",
+      "text": "Professional Clearing Members (PCMs): Jointly inspected by Clearing Corporations once every two years.",
+      "color": "teal",
+      "emphasis": "tertiary",
+      "visual_weight": "light"
+    },
+    {
+      "role": "supporting_point",
+      "text": "Special Inspections",
+      "color": "orange",
+      "emphasis": "secondary",
+      "visual_weight": "medium"
+    },
+    {
+      "role": "supporting_point",
+      "text": "MIIs can conduct special or limited inspections if red flags are raised (complaints, arbitration, regulator references).",
+      "color": "red",
+      "emphasis": "tertiary",
+      "visual_weight": "light"
+    },
+    {
+      "role": "conclusion",
+      "text": "Lead MII & Enforcement Actions",
+      "color": "purple",
+      "emphasis": "secondary",
+      "visual_weight": "medium"
+    },
+    {
+      "role": "supporting_point",
+      "text": "A Lead MII will be appointed to initiate enforcement actions after inspections.",
+      "color": "purple",
+      "emphasis": "tertiary",
+      "visual_weight": "light"
+    }
+  ]
+}
+
+==== 2025-09-06 19:33:19.460602 ====
+NOTE: Used gemini-2.5-flash
+USER INPUT:
+Regulatory Background
+On August 07, 2025, SEBI introduced a landmark circular that reshapes the inspection
+framework for intermediaries in the securities market.
+Present Scenario:
+Currently, brokers, depository participants (DPs), and clearing members are inspected
+separately by each Market Infrastructure Institution (MII) i.e., Stock Exchanges, Depositories,
+and Clearing Corporations.
+•
+This means a single entity holding multiple registrations could face three to four
+different inspections in the same year.
+•
+Such repeated inspections often cause operational disruptions, require significant
+manpower, and divert resources away from business activities.
+•
+It results in compliance fatigue for intermediaries, as they have to repeatedly prepare
+for audits, respond to similar queries, and manage overlapping compliance demands.
+The New Framework:
+To address this challenge, SEBI has now introduced the concept of Joint Annual Inspections.
+Instead of being inspected separately, an intermediary will undergo one consolidated
+inspection that covers all its business segments
+—
+stockbroking, depository par
+ticipant
+activities, and clearing operations.
+•
+Depositories will oversee DP operations.
+•
+Clearing Corporations will focus on clearing activities.
+•
+Stock Exchanges will evaluate broking
+RAW OUTPUT:
+{
+  "title": "SEBI's New Inspection Framework: From Fragmented to Joint Audits",
+  "layout": "comparison",
+  "visual_flow": "left_to_right",
+  "sections": [
+    {
+      "role": "main_concept",
+      "text": "SEBI Mandates Joint Annual Inspections for Securities Market Intermediaries (Effective Aug 07, 2025)",
+      "color": "blue",
+      "emphasis": "primary",
+      "visual_weight": "heavy"
+    },
+    {
+      "role": "supporting_point",
+      "text": "Previous Scenario: Separate, Multiple Inspections",
+      "color": "red",
+      "emphasis": "secondary",
+      "visual_weight": "medium"
+    },
+    {
+      "role": "supporting_point",
+      "text": "Each Market Infrastructure Institution (MII) inspected its specific segment (e.g., Stock Exchanges, Depositories, Clearing Corps).",
+      "color": "red",
+      "emphasis": "tertiary",
+      "visual_weight": "light"
+    },
+    {
+      "role": "supporting_point",
+      "text": "Result: Operational disruptions, resource diversion, and compliance fatigue from repeated audits for entities with multiple registrations.",
+      "color": "red",
+      "emphasis": "tertiary",
+      "visual_weight": "light"
+    },
+    {
+      "role": "supporting_point",
+      "text": "New Framework: Joint, Consolidated Inspections",
+      "color": "green",
+      "emphasis": "secondary",
+      "visual_weight": "medium"
+    },
+    {
+      "role": "supporting_point",
+      "text": "One unified annual inspection covers all business segments (broking, DP, clearing) of an intermediary.",
+      "color": "green",
+      "emphasis": "tertiary",
+      "visual_weight": "light"
+    },
+    {
+      "role": "supporting_point",
+      "text": "Each MII (Depositories, Clearing Corporations, Stock Exchanges) will still oversee its domain within the joint audit.",
+      "color": "green",
+      "emphasis": "tertiary",
+      "visual_weight": "light"
+    }
+  ]
+}
+
+==== 2025-09-07 09:03:58.720227 ====
+NOTE: Used gemini-2.5-flash
+USER INPUT:
+Equator Resolution
+is a dedicated platform for peaceful conflict
+resolution, offering mediation services rooted in trust, neutrality, and
+respect. Designed in alignment with the principles of
+the
+International Mediation Institute (IMI)
+, our processes are led
+by experienced and internationally recognized mediators.
+We believe in making mediation
+accessible, confidential, and effective
+,
+whether you're navigating personal disputes, commercial conflicts, or
+consumer grievances. With a flexible format that includes both online
+and offline modes, we provide individuals and businesses a space to
+resolve differences amicably
+—
+without the delays,
+cost, or hostility of
+litigation.
+Equator Resolution
+has entered into various MOUs and
+Partnership Agreements with the various International Organizations
+working in the domain of ADR and Mediation. Various International
+Mediators are members of Equa Advisory Council.
+Our goal is to provide a safe, cost
+-
+effective, trustworthy, and accessible
+platform to manage conflicts arising in all walks of life. It is an
+innovative
+Online
+Dispute Resolution
+Platform
+that affords people
+access to easy and quick redressal of their complaints, against
+companies and individuals and at the same time provides an
+opportunity for businesses to maintain good customer relations.
+RAW OUTPUT:
+{
+  "title": "Equator Resolution: Your Platform for Peaceful Conflict Resolution",
+  "layout": "concept_map",
+  "visual_flow": "center_radial",
+  "sections": [
+    {
+      "role": "main_concept",
+      "text": "Equator Resolution: Peaceful Conflict Resolution Platform",
+      "color": "blue",
+      "emphasis": "primary",
+      "visual_weight": "heavy"
+    },
+    {
+      "role": "supporting_point",
+      "text": "Core Services: Mediation rooted in Trust, Neutrality, Respect & IMI Principles.",
+      "color": "green",
+      "emphasis": "secondary",
+      "visual_weight": "medium"
+    },
+    {
+      "role": "supporting_point",
+      "text": "Key Benefits: Accessible, Confidential, Effective. Avoids Litigation Delays, Costs, and Hostility.",
+      "color": "orange",
+      "emphasis": "secondary",
+      "visual_weight": "medium"
+    },
+    {
+      "role": "supporting_point",
+      "text": "Broad Scope: For Personal, Commercial, Consumer Disputes. Serves Individuals & Businesses.",
+      "color": "purple",
+      "emphasis": "secondary",
+      "visual_weight": "medium"
+    },
+    {
+      "role": "supporting_point",
+      "text": "Operational Model: Flexible Online & Offline. Led by Experienced, Internationally Recognized Mediators. Strong Partnerships & Advisory Council.",
+      "color": "teal",
+      "emphasis": "secondary",
+      "visual_weight": "medium"
+    }
+  ]
+}
+
+==== 2025-09-07 09:06:32.435029 ====
+NOTE: Used gemini-2.5-flash
+USER INPUT:
+LawDocs
+is a Legal Tech company that is
+making legal services accessible & affordable to
+all. It provides thousands of templates, called as
+Smart Drafts, almost for every purpose, be it
+legal, property, personal, HR, or business
+-
+related documents, completely free
+. The
+eSignatures can be used to secure the
+documents and create legally binding contracts,
+again free. It provides startup advisory and
+business compliance services with
+subscriptions and offers wide range of products
+and solutions. It renders free legal
+advice to
+people online with Vidhi, an AI
+-
+based chatbot.
+Further, one can talk to experts on the phone or
+VC for personalized solutions. LawDocs is
+capable to provide pan India assistance through
+countrywide network of trained Paralegal
+professionals. It a
+lso has a good social media
+presence on all the major platforms. One can
+read informative blogs, watch videos and listen
+to podcasts on various legal and business topics
+to learn and gain more. The research centres
+keep it ahead of time in Law and Technolo
+gy
+both. The partners and collaborations make the
+LawDocs team even more strong. The entire
+ecosystem is technologically advanced and
+secured with AWS that you can trust.
+RAW OUTPUT:
+{
+  "title": "LawDocs: Empowering Legal Access Through Technology",
+  "layout": "concept_map",
+  "visual_flow": "center_radial",
+  "sections": [
+    {
+      "role": "main_concept",
+      "text": "LawDocs: Accessible & Affordable Legal Services for All",
+      "color": "blue",
+      "emphasis": "primary",
+      "visual_weight": "heavy"
+    },
+    {
+      "role": "supporting_point",
+      "text": "Free Self-Service Tools: Thousands of Smart Drafts & eSignatures (Legal, Property, HR, Business)",
+      "color": "green",
+      "emphasis": "secondary",
+      "visual_weight": "medium"
+    },
+    {
+      "role": "supporting_point",
+      "text": "Personalized Legal Support: Free AI Chatbot (Vidhi), Expert Consultations & Pan-India Paralegal Network",
+      "color": "orange",
+      "emphasis": "secondary",
+      "visual_weight": "medium"
+    },
+    {
+      "role": "supporting_point",
+      "text": "Business Solutions: Subscription-Based Startup Advisory & Business Compliance Services",
+      "color": "red",
+      "emphasis": "secondary",
+      "visual_weight": "medium"
+    },
+    {
+      "role": "supporting_point",
+      "text": "Knowledge Hub & Secure Platform: Informative Blogs, Videos, Podcasts; Research & AWS Security",
+      "color": "purple",
+      "emphasis": "secondary",
+      "visual_weight": "medium"
+    }
+  ]
+}
+
+==== 2025-09-07 09:08:29.546425 ====
+NOTE: Used gemini-2.5-flash
+USER INPUT:
+5
+KEY AMENDMENTS INTRODUCED
+1.
+Reference to FAQs
+A new provision has been inserted in Paragraph 1 of the Master
+Direction, explicitly providing that the Frequently Asked
+Questions (FAQs) on KYC, hosted on the official RBI website,
+shall be deemed as part of the regulatory framework. This
+enhances accessi
+bility of interpretive guidance for regulated
+entities and customers.
+2.
+Inclusion of Persons with Disabilities (PwDs)
+In Paragraph 11, the definition of “disadvantaged” now expressly
+includes Persons with Disabilities (PwDs). Importantly, the
+Directions mandate that:
+•
+No application for onboarding or periodic KYC updation
+shall be rejected without due application of mind.
+•
+The reasons for rejection must be formally recorded by the
+concerned officer.
+This amendment is a significant step towards inclusive banking
+practices and prevention of arbitrary denial of financial services
+to PwDs.
+3.
+Expansion of KYC Requirement for Occasional Transactions
+Paragraph 14 has been amended to extend KYC compliance
+obligations to:
+•
+Occasional transactions of
+₹
+50,000 or more, whether
+conducted as a single transaction or as multiple linked
+transactions.
+RAW OUTPUT:
+{
+  "title": "Key Amendments to KYC Regulations",
+  "layout": "concept_map",
+  "visual_flow": "center_radial",
+  "sections": [
+    {
+      "role": "main_concept",
+      "text": "5 Key Amendments Introduced to KYC Regulations",
+      "color": "blue",
+      "emphasis": "primary",
+      "visual_weight": "heavy"
+    },
+    {
+      "role": "supporting_point",
+      "text": "1. Reference to FAQs: FAQs on KYC hosted on RBI website are now deemed part of the regulatory framework, enhancing accessibility for regulated entities and customers.",
+      "color": "green",
+      "emphasis": "secondary",
+      "visual_weight": "medium"
+    },
+    {
+      "role": "supporting_point",
+      "text": "2. Inclusion of Persons with Disabilities (PwDs): PwDs are now explicitly included in the definition of 'disadvantaged.' Rejection of onboarding or KYC updation for PwDs must be formally recorded with due application of mind, promoting inclusive banking.",
+      "color": "orange",
+      "emphasis": "secondary",
+      "visual_weight": "medium"
+    },
+    {
+      "role": "supporting_point",
+      "text": "3. Expansion of KYC Requirement for Occasional Transactions: KYC compliance obligations are extended to occasional transactions of ₹50,000 or more, whether conducted as a single transaction or multiple linked transactions.",
+      "color": "purple",
+      "emphasis": "secondary",
+      "visual_weight": "medium"
+    }
+  ]
+}
+
+==== 2025-09-07 09:09:33.100572 ====
+NOTE: Used gemini-2.5-flash
+USER INPUT:
+For Regulated Entities
+•
+Banks and financial institutions will need to update internal
+compliance policies to align with the revised Directions.
+•
+Special emphasis must be placed on ensuring that PwDs are
+not excluded from KYC processes.
+•
+Systems must be strengthened to monitor occasional
+transactions and cross
+-
+border remittances above the
+prescribed threshold.
+•
+Adoption of Aadhaar Face Authentication and inclusive
+liveness checks will require technological upgradation and
+staff training.
+For Customers
+•
+Greater clarity and transparency through access to RBI
+FAQs.
+•
+Enhanced protection for PwDs in accessing financial
+services.
+•
+Assurance that KYC rejection, if any, will be backed by
+recorded reasons, reducing arbitrariness.
+RAW OUTPUT:
+{
+  "title": "Revised KYC Directions: Impact & Benefits",
+  "layout": "comparison",
+  "visual_flow": "left_to_right",
+  "sections": [
+    {
+      "role": "main_concept",
+      "text": "Revised KYC Directions",
+      "color": "purple",
+      "emphasis": "primary",
+      "visual_weight": "heavy"
+    },
+    {
+      "role": "supporting_point",
+      "text": "For Regulated Entities",
+      "color": "blue",
+      "emphasis": "secondary",
+      "visual_weight": "medium"
+    },
+    {
+      "role": "supporting_point",
+      "text": "Update Compliance Policies",
+      "color": "blue",
+      "emphasis": "tertiary",
+      "visual_weight": "light"
+    },
+    {
+      "role": "supporting_point",
+      "text": "Ensure PwD Inclusion in KYC",
+      "color": "blue",
+      "emphasis": "tertiary",
+      "visual_weight": "light"
+    },
+    {
+      "role": "supporting_point",
+      "text": "Strengthen System for Transaction Monitoring",
+      "color": "blue",
+      "emphasis": "tertiary",
+      "visual_weight": "light"
+    },
+    {
+      "role": "supporting_point",
+      "text": "Tech Upgrades & Staff Training (Aadhaar Face Auth)",
+      "color": "blue",
+      "emphasis": "tertiary",
+      "visual_weight": "light"
+    },
+    {
+      "role": "supporting_point",
+      "text": "For Customers",
+      "color": "green",
+      "emphasis": "secondary",
+      "visual_weight": "medium"
+    },
+    {
+      "role": "supporting_point",
+      "text": "Greater Clarity & Transparency (RBI FAQs)",
+      "color": "green",
+      "emphasis": "tertiary",
+      "visual_weight": "light"
+    },
+    {
+      "role": "supporting_point",
+      "text": "Enhanced Protection for PwDs in Financial Services",
+      "color": "green",
+      "emphasis": "tertiary",
+      "visual_weight": "light"
+    },
+    {
+      "role": "supporting_point",
+      "text": "Reduced Arbitrariness in KYC Rejections",
+      "color": "green",
+      "emphasis": "tertiary",
+      "visual_weight": "light"
+    }
+  ]
+}
+
+==== 2025-09-07 09:23:29.381943 ====
+NOTE: Used gemini-2.5-flash
+USER INPUT:
+5
+KEY AMENDMENTS INTRODUCED
+1.
+Reference to FAQs
+A new provision has been inserted in Paragraph 1 of the Master
+Direction, explicitly providing that the Frequently Asked
+Questions (FAQs) on KYC, hosted on the official RBI website,
+shall be deemed as part of the regulatory framework. This
+enhances accessi
+bility of interpretive guidance for regulated
+entities and customers.
+2.
+Inclusion of Persons with Disabilities (PwDs)
+In Paragraph 11, the definition of “disadvantaged” now expressly
+includes Persons with Disabilities (PwDs). Importantly, the
+Directions mandate that:
+•
+No application for onboarding or periodic KYC updation
+shall be rejected without due application of mind.
+•
+The reasons for rejection must be formally recorded by the
+concerned officer.
+This amendment is a significant step towards inclusive banking
+practices and prevention of arbitrary denial of financial services
+to PwDs.
+3.
+Expansion of KYC Requirement for Occasional Transactions
+Paragraph 14 has been amended to extend KYC compliance
+obligations to:
+•
+Occasional transactions of
+₹
+50,000 or more, whether
+conducted as a single transaction or as multiple linked
+transactions.
+•
+International money transfer operations.
+This modification addresses concerns of money laundering and
+illicit fund transfers through occasional high
+-
+value transactions.
+RAW OUTPUT:
+{
+  "title": "RBI's Key KYC Amendments",
+  "layout": "concept_map",
+  "visual_flow": "center_radial",
+  "sections": [
+    {
+      "role": "main_concept",
+      "text": "5 Key KYC Amendments Introduced",
+      "color": "blue",
+      "emphasis": "primary",
+      "visual_weight": "heavy"
+    },
+    {
+      "role": "supporting_point",
+      "text": "Reference to FAQs: FAQs on KYC on RBI website are now part of the regulatory framework, enhancing accessibility of interpretive guidance.",
+      "color": "green",
+      "emphasis": "secondary",
+      "visual_weight": "medium"
+    },
+    {
+      "role": "supporting_point",
+      "text": "Inclusion of Persons with Disabilities (PwDs): 'Disadvantaged' now includes PwDs. Mandates no rejection without due application of mind and formal recording of rejection reasons. Promotes inclusive banking.",
+      "color": "orange",
+      "emphasis": "secondary",
+      "visual_weight": "medium"
+    },
+    {
+      "role": "supporting_point",
+      "text": "Expansion of KYC for Occasional Transactions: KYC compliance extended to occasional transactions of ₹50,000+ (single or linked) and international money transfers. Addresses money laundering concerns.",
+      "color": "purple",
+      "emphasis": "secondary",
+      "visual_weight": "medium"
+    }
+  ]
+}
+
+==== 2025-09-07 09:26:46.288741 ====
+NOTE: Used gemini-2.5-flash
+USER INPUT:
+1
+Trust
+,
+Finality
+, And The
+Integrity
+Of The
+Mediation Process
+At
+Equator Resolution
+, we often tell parties that mediation is not a halfway
+house
+,
+it’s a place where conversations end with clarity, commitment, and
+closure.
+The
+Kerala High Court
+recently reinforced this truth in a case where two
+matrimonial appeals sought to undo a settlement reached through court
+-
+annexed mediation. The parties had already agreed, signed, and allowed the
+Family Court in Kannur to pass
+a
+compromise decree
+. But
+230 days later
+,
+they wanted to walk it back.
+Their reason? They claimed the settlement was entered into by a Power of
+Attorney holder without proper instructions, while one of them was
+incapacitated due to a cardiac ailment.
+Why
+The
+Court
+Said “
+No
+”
+The Division Bench of
+Justice Devan Ramachandran
+and
+Justice M.B.
+Snehalatha
+wasn’t convinced. They held that
+allowing people to casually
+RAW OUTPUT:
+{
+  "title": "Upholding Mediation's Finality: A Kerala High Court Ruling",
+  "layout": "process_flow",
+  "visual_flow": "top_to_bottom",
+  "sections": [
+    {
+      "role": "main_concept",
+      "text": "Mediation's Core: Trust, Finality, and Integrity. It ensures conversations end with clarity, commitment, and closure.",
+      "color": "blue",
+      "emphasis": "primary",
+      "visual_weight": "heavy"
+    },
+    {
+      "role": "process_step",
+      "text": "Court-annexed mediation concludes with a signed settlement, leading to a Family Court compromise decree.",
+      "color": "green",
+      "emphasis": "secondary",
+      "visual_weight": "medium"
+    },
+    {
+      "role": "process_step",
+      "text": "230 days later, parties appeal to undo the decree, claiming settlement by Power of Attorney holder without proper instructions and incapacitation.",
+      "color": "orange",
+      "emphasis": "secondary",
+      "visual_weight": "medium"
+    },
+    {
+      "role": "process_step",
+      "text": "The Kerala High Court Division Bench (Justices Ramachandran & Snehalatha) firmly rejects the appeal, stating settlements cannot be casually walked back.",
+      "color": "red",
+      "emphasis": "secondary",
+      "visual_weight": "medium"
+    },
+    {
+      "role": "conclusion",
+      "text": "The Court reinforces the binding nature of mediation, safeguarding the integrity and finality essential for the justice system.",
+      "color": "purple",
+      "emphasis": "secondary",
+      "visual_weight": "medium"
+    }
+  ]
+}
+
+==== 2025-09-07 09:28:12.623517 ====
+NOTE: Used gemini-2.5-flash
+USER INPUT:
+Why This Case Matters
+This is not just a technical dispute about legal provisions
+but
+it’s about the
+fine balance between judicial oversight and regulatory independence. If courts
+could freely compel SEBI to investigate, it might set a precedent that weakens
+the regulator’s ability to decide its own priorities and methods.
+For investors, it’s also a reminder that there are structured and lawful ways
+to raise concerns about market misconduct. Complaints can be lodged on
+SCORES, SEBI’s online grievance redressal system. They can be taken up
+with SEBI’s grievance cell. If SEBI
+issues an appealable order, the matter can
+go to the Securities Appellate Tribunal (SAT). And if none of these options
+provide relief, one can approach the High Court through a writ petition
+,
+but
+even then, the court’s role is to ensure timely consideratio
+n, not to dictate
+investigative outcomes.
+RAW OUTPUT:
+{
+  "title": "Why This Case Matters: Balancing Oversight & Investor Pathways",
+  "layout": "hierarchy",
+  "visual_flow": "top_to_bottom",
+  "sections": [
+    {
+      "role": "main_concept",
+      "text": "Why This Case Matters: Balancing Oversight & Regulatory Independence",
+      "color": "blue",
+      "emphasis": "primary",
+      "visual_weight": "heavy"
+    },
+    {
+      "role": "supporting_point",
+      "text": "Judicial Oversight vs. Regulatory Independence (SEBI)",
+      "color": "orange",
+      "emphasis": "secondary",
+      "visual_weight": "medium"
+    },
+    {
+      "role": "supporting_point",
+      "text": "Risk: Weakened SEBI's Authority to Prioritize Investigations",
+      "color": "red",
+      "emphasis": "tertiary",
+      "visual_weight": "light"
+    },
+    {
+      "role": "supporting_point",
+      "text": "Structured Avenues for Investor Concerns",
+      "color": "green",
+      "emphasis": "secondary",
+      "visual_weight": "medium"
+    },
+    {
+      "role": "process_step",
+      "text": "1. Lodge Complaint on SCORES (SEBI's Grievance System)",
+      "color": "teal",
+      "emphasis": "tertiary",
+      "visual_weight": "light"
+    },
+    {
+      "role": "process_step",
+      "text": "2. Approach SEBI's Grievance Cell",
+      "color": "teal",
+      "emphasis": "tertiary",
+      "visual_weight": "light"
+    },
+    {
+      "role": "process_step",
+      "text": "3. Appeal to Securities Appellate Tribunal (SAT) (for appealable orders)",
+      "color": "teal",
+      "emphasis": "tertiary",
+      "visual_weight": "light"
+    },
+    {
+      "role": "process_step",
+      "text": "4. High Court (Writ Petition) (for timely consideration, not dictating outcomes)",
+      "color": "teal",
+      "emphasis": "tertiary",
+      "visual_weight": "light"
+    }
+  ]
+}

@@ -333,5 +333,5 @@ def generate():
         })
 
 if __name__ == "__main__":
-    print("🚀 Napkin.ai Clone running at http://0.0.0.0:5000")
-    app.run(host="0.0.0.0", port=5000, debug=True)
+    print("🚀 Napkin.ai Clone running at http://0.0.0.0:8000")
+    app.run(host="0.0.0.0", port=8000, debug=True)
