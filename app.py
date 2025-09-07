@@ -6,7 +6,7 @@ import traceback
 import logging
 from datetime import datetime
 import google.generativeai as genai
-from google.genai import types
+from google.generativeai import types
 
 # Configure logging
 logging.basicConfig(level=logging.DEBUG)
