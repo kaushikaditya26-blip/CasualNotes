@@ -5,7 +5,7 @@ import json
 import traceback
 import logging
 from datetime import datetime
-from google import genai
+import google.generativeai as genai
 from google.genai import types
 
 # Configure logging
