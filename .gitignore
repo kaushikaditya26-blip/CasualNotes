@@ -1,39 +1,26 @@
-# ---- Python ----
 __pycache__/
 *.py[cod]
-*.pyo
-*.pyd
-*.so
-
-# ---- Virtual Environments ----
+*$py.class
 venv/
-.env/
-.venv/
-
-# ---- Environment & Secrets ----
-*.env
+.env
 .env.*
-secrets.json
-
-# ---- Logs ----
-*.log
-logs/
-*.out
-*.err
-
-# ---- OS files ----
 .DS_Store
-Thumbs.db
-
-# ---- IDE files ----
+*.swp
+*.swo
 .vscode/
 .idea/
-
-# ---- Build / Packaging ----
 build/
 dist/
 *.egg-info/
+pip-wheel-metadata/
+*.log
 
-# ---- Custom Ignore ----
-google/   # Prevents local google/ folder from shadowing the real google package
+# Pytest
+.cache/
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Secrets
+.env
 
